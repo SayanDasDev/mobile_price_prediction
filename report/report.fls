@@ -1,8 +1,8 @@
-PWD d:/Assignments/ML/final_project_sem1/report
+PWD d:/Projects/smartphone_price_prediction/report
 INPUT c:/texlive/2024/texmf.cnf
 INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT d:/Assignments/ML/final_project_sem1/report/report.tex
+INPUT d:/Projects/smartphone_price_prediction/report/report.tex
 OUTPUT report.log
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/report.cls
 INPUT c:/texlive/2024/texmf-dist/tex/latex/base/report.cls

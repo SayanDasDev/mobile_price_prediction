@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1732297961.40591 "d:/Assignments/ML/final_project_sem1/report/report.tex" "report.pdf" "report" 1732297964.25501 0
+["pdflatex"] 1732300499.5416 "d:/Projects/smartphone_price_prediction/report/report.tex" "report.pdf" "report" 1732300502.74896 0
   "box_plots_after.png" 1732257147 141388 d47aacf04b6b1a81847844c6b3c191b3 ""
   "box_plots_before.png" 1732257131 143447 d4687cab9f9863a28d9670e5204c0c0d ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond-maths/a_w5zv5t.enc" 1722698620 2298 bccb2f2eb974c2133551124283532689 ""
@@ -233,12 +233,12 @@
   "cmat_VC.png" 1732293986 21648 893e811e8670a3b435a3a763115f7947 ""
   "cmat_XG.png" 1732293968 20449 6445583ebd67cd3dcefacb1af49a5470 ""
   "corr_viz.png" 1732257996 236768 b50f25733642404bf9ade1713d34371b ""
-  "d:/Assignments/ML/final_project_sem1/report/report.tex" 1732297960 56181 dba59ce7e669a84a7e6ebda9c60fadea ""
+  "d:/Projects/smartphone_price_prediction/report/report.tex" 1732300498 57190 3865c718d8a2cacf59b5e5988efbb5c9 ""
   "imbalance_check.png" 1732258835 9889 98c2fc0e627240c4383daa87b38a9223 ""
-  "report.aux" 1732297963 9457 b0c5431f9e2d28054d34afdc16b5002a "pdflatex"
-  "report.out" 1732297963 5468 8cd8d0a974862e756adb00b629f3ac96 "pdflatex"
-  "report.tex" 1732297960 56181 dba59ce7e669a84a7e6ebda9c60fadea ""
-  "report.toc" 1732297963 3156 670587df43db28c08a6ed761ff5f9699 "pdflatex"
+  "report.aux" 1732300502 9457 e5fcc149081918730f719438d84b4d4a "pdflatex"
+  "report.out" 1732300502 5468 8cd8d0a974862e756adb00b629f3ac96 "pdflatex"
+  "report.tex" 1732300498 57190 3865c718d8a2cacf59b5e5988efbb5c9 ""
+  "report.toc" 1732300502 3156 a361277d93a55a8ac9887e3cbfcf7a1a "pdflatex"
   (generated)
   "report.aux"
   "report.log"
