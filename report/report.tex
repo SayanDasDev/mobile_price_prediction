@@ -63,9 +63,9 @@ tabsize=2,
 \renewcommand{\thechapter}{\Roman{chapter}}
 
 \pagestyle{fancy}
-\fancyhead[l]{Final Project Report \\}
-\fancyhead[c]{Section \thechapter \\}
-\fancyhead[r]{Sayan Das: \texttt{B2430035} \\ Raihan Uddin: \texttt{B2430070}}
+% \fancyhead[l]{Final Project Report \\}
+\fancyhead[l]{ }
+% \fancyhead[r]{Sayan Das: \texttt{B2430035} \\ Raihan Uddin: \texttt{B2430070}}
 \fancyfoot[c]{\thepage}
 \renewcommand{\headrulewidth}{0.2pt}
 \setlength{\headheight}{28pt}
@@ -318,7 +318,24 @@ Outliers can significantly impact the performance of machine learning models. To
 	\caption{Box plots of features before outlier handling.}
 	\label{box_plots_before}
 \end{figure}
-The box plots revealed outliers in two features, fc and px\_height. To address these outliers, the IQR (Interquartile Range) method was used to detect and remove extreme values.
+The box plots revealed outliers in two features, fc and px\_height. To address these outliers, the IQR (Interquartile Range) method was used to detect and remove extreme values. \\
+The Interquartile Range (IQR) is the range between the first quartile (Q1) and the third quartile (Q3) of the data. The formula to compute the IQR is:
+
+\[
+\text{IQR} = Q3 - Q1
+\]
+
+Once the IQR is calculated, outliers are identified using the following bounds:
+
+\[
+\text{Lower Bound} = Q1 - 1.5 \times \text{IQR}
+\]
+\[
+\text{Upper Bound} = Q3 + 1.5 \times \text{IQR}
+\]
+
+Any data point that falls below the lower bound or above the upper bound is considered an outlier.
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=25em]{box_plots_after.png}
@@ -1147,6 +1164,15 @@ The key takeaways from this project are:
 		      \item The developed model can be adapted to other product categories, providing a broader application in market analysis and consumer research.
 	      \end{itemize}
 \end{enumerate}
+
+\chapter*{Acknowledgement}
+\addcontentsline{toc}{chapter}{Acknowledgement}
+
+We would like to express our sincere gratitude to our supervisor, \textbf{Br. Bhaswarachaitanya} (Tamal Maharaj), Assistant Professor in the Department of Computer Science at \textit{Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI)}, for his invaluable guidance, encouragement, and support throughout the course of this project. His expertise in machine learning and his insightful suggestions were instrumental in shaping this project.
+
+We would also like to thank \textit{Ramakrishna Mission Vivekananda Educational and Research Institute} for providing the necessary resources and facilities that enabled the successful completion of this project.
+
+Lastly, we extend our heartfelt thanks to our batch mates for their constant encouragement and understanding during the challenging phases of this project.
 
 \renewcommand{\bibname}{References}
 \begin{thebibliography}{9}

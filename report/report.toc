@@ -15,28 +15,29 @@
 \contentsline {section}{\numberline {IV.2}Outlier Handling}{13}{section.4.2}%
 \contentsline {section}{\numberline {IV.3}Class Imbalance Check}{14}{section.4.3}%
 \contentsline {section}{\numberline {IV.4}Correlation Analysis}{15}{section.4.4}%
-\contentsline {section}{\numberline {IV.5}Feature Engineering}{16}{section.4.5}%
-\contentsline {section}{\numberline {IV.6}Feature Selection}{17}{section.4.6}%
-\contentsline {section}{\numberline {IV.7}Normalizing features}{18}{section.4.7}%
-\contentsline {section}{\numberline {IV.8}Train-Test Split}{19}{section.4.8}%
-\contentsline {section}{\numberline {IV.9}Scaling}{19}{section.4.9}%
-\contentsline {chapter}{\numberline {V}Methodology}{20}{chapter.5}%
-\contentsline {section}{\numberline {V.1}Algorithms Used}{20}{section.5.1}%
-\contentsline {section}{\numberline {V.2}Justification}{21}{section.5.2}%
-\contentsline {chapter}{\numberline {VI}Implementation}{23}{chapter.6}%
-\contentsline {section}{\numberline {VI.1}Tools and Libraries}{23}{section.6.1}%
-\contentsline {section}{\numberline {VI.2}Parameters}{24}{section.6.2}%
-\contentsline {section}{\numberline {VI.3}Training Process}{25}{section.6.3}%
-\contentsline {chapter}{\numberline {VII}Results}{26}{chapter.7}%
-\contentsline {section}{\numberline {VII.1}Plots}{26}{section.7.1}%
-\contentsline {section}{\numberline {VII.2}Evaluation Metrics}{36}{section.7.2}%
-\contentsline {section}{\numberline {VII.3}Comparison between different Models}{37}{section.7.3}%
-\contentsline {chapter}{\numberline {VIII}Discussion}{39}{chapter.8}%
-\contentsline {section}{\numberline {VIII.1}Analysis of Results}{39}{section.8.1}%
-\contentsline {section}{\numberline {VIII.2}Anomalies and Unexpected Findings}{39}{section.8.2}%
-\contentsline {section}{\numberline {VIII.3}Limitations}{40}{section.8.3}%
-\contentsline {chapter}{\numberline {IX}Conclusion}{41}{chapter.9}%
-\contentsline {section}{\numberline {IX.1}Key Takeaways}{41}{section.9.1}%
-\contentsline {section}{\numberline {IX.2}Reflection on Objectives}{42}{section.9.2}%
-\contentsline {section}{\numberline {IX.3}Future Work}{42}{section.9.3}%
-\contentsline {chapter}{References}{45}{Item.58}%
+\contentsline {section}{\numberline {IV.5}Feature Engineering}{17}{section.4.5}%
+\contentsline {section}{\numberline {IV.6}Feature Selection}{18}{section.4.6}%
+\contentsline {section}{\numberline {IV.7}Normalizing features}{19}{section.4.7}%
+\contentsline {section}{\numberline {IV.8}Train-Test Split}{20}{section.4.8}%
+\contentsline {section}{\numberline {IV.9}Scaling}{20}{section.4.9}%
+\contentsline {chapter}{\numberline {V}Methodology}{21}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Algorithms Used}{21}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Justification}{22}{section.5.2}%
+\contentsline {chapter}{\numberline {VI}Implementation}{24}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}Tools and Libraries}{24}{section.6.1}%
+\contentsline {section}{\numberline {VI.2}Parameters}{25}{section.6.2}%
+\contentsline {section}{\numberline {VI.3}Training Process}{26}{section.6.3}%
+\contentsline {chapter}{\numberline {VII}Results}{27}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Plots}{27}{section.7.1}%
+\contentsline {section}{\numberline {VII.2}Evaluation Metrics}{37}{section.7.2}%
+\contentsline {section}{\numberline {VII.3}Comparison between different Models}{38}{section.7.3}%
+\contentsline {chapter}{\numberline {VIII}Discussion}{40}{chapter.8}%
+\contentsline {section}{\numberline {VIII.1}Analysis of Results}{40}{section.8.1}%
+\contentsline {section}{\numberline {VIII.2}Anomalies and Unexpected Findings}{40}{section.8.2}%
+\contentsline {section}{\numberline {VIII.3}Limitations}{41}{section.8.3}%
+\contentsline {chapter}{\numberline {IX}Conclusion}{42}{chapter.9}%
+\contentsline {section}{\numberline {IX.1}Key Takeaways}{42}{section.9.1}%
+\contentsline {section}{\numberline {IX.2}Reflection on Objectives}{43}{section.9.2}%
+\contentsline {section}{\numberline {IX.3}Future Work}{43}{section.9.3}%
+\contentsline {chapter}{Acknowledgement}{45}{Item.58}%
+\contentsline {chapter}{References}{47}{Item.58}%
