@@ -1,0 +1,138 @@
+\documentclass[14pt, aspectratio=169]{beamer}
+\usetheme{copenhagen}
+\usecolortheme{seahorse}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}{} 
+\setbeamertemplate{footline}{} 
+\setbeamercovered{transparent} 
+
+\usepackage{amsmath, amsfonts, amssymb, enumerate, xcolor, lipsum, minted, algorithm, algpseudocode, algorithmicx, float, hyperref, booktabs, graphicx, array}
+% \usepackage{float, booktabs, amssymb, amsfonts, amsmath}
+
+
+\title{A Classification Based approach for predicting Smartphone Price Categories}
+\author{\textbf{Sayan Das} - B2430035 \and \textbf{Raihan Uddin} - B2430070}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+
+
+\section{Introduction}
+\begin{frame}{Background}
+    \begin{itemize}
+      \item The smartphone industry experiences continuous technological innovations, with manufacturers introducing advanced features.
+      \item Multiple global players, such as Apple, Samsung, and Xiaomi, vie for market share, leading to frequent product launches and \textbf{pricing battles}.
+      \item Consumers demand \textbf{value for money}, with preferences shifting toward devices offering high performance at competitive prices.
+  \end{itemize}
+\end{frame}
+\begin{frame}{Motivation}
+  We hope our model will help:
+  \vspace{1.25em}
+  \begin{itemize}
+	\setlength\itemsep{1em}
+    \item<1-> Simplify pricing strategies for \textbf{manufacturers}
+    \item<2-> Increase pricing transparency for \textbf{consumers}
+  \end{itemize}
+\end{frame}
+\begin{frame}{Objectives}
+  \begin{itemize}
+	\setlength\itemsep{0.75em}
+    \item<1-> Develop a Robust Classification Model
+    \item<2-> Determine the most influential factors behind smartphone pricing
+    \item<3-> Compare algorithm performances
+    \item<4-> Practical Applicability
+    \item<5-> Methodological Contribution
+  \end{itemize}
+\end{frame}
+
+
+\section{Dataset Description}
+\begin{frame}{Source}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{kaggle.png}
+  \end{figure}
+  Link - \footnotesize \href{https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification?select=train.csv}{https://www.kaggle.com/datasets/iabhishekofficial/smartphone-price-classification}\\
+  \normalsize
+  
+  The dataset is publicly available and contains \textbf{2000 smartphone entries} with \textbf{19 feature variables} and \textbf{1 target variable} representing \texttt{price\_range}.
+\end{frame}
+\begin{frame}{Features}
+  \vspace{-0.25em}
+  \scriptsize
+  \begin{table}[H]
+    \begin{tabular}{lll}
+      \toprule
+      \textbf{Feature Name}   & \textbf{Description}  & \textbf{Type}  \\
+      \toprule
+      \texttt{battery\_power} & battery capacity in mAh   & Numerical  \\
+      \texttt{clock\_speed}   & speed at which processor executes instructions & Numerical \\
+      \texttt{fc}             & front Camera Megapixels & Numerical \\
+      \texttt{pc}             & primary Camera Megapixels & Numerical \\
+      \texttt{int\_memory}    & internal Memory capacity & Numerical \\
+      \texttt{m\_dep}         & smartphone Depth in cm & Numerical \\
+      \texttt{mobile\_wt}     & weight of the smartphone & Numerical \\
+      \texttt{n\_cores}       & number of cores in processor & Numerical \\
+      \texttt{px\_height}     & pixel Resolution Height & Numerical \\
+      \texttt{px\_width}      & pixel Resolution Width & Numerical \\
+      \texttt{ram}            & RAM in MB & Numerical \\
+      \texttt{sc\_h}          & screen Height in cm & Numerical \\
+      \texttt{sc\_w}          & screen Width in cm & Numerical \\
+      \texttt{talk\_time}     & longest time that a single battery charge will last over a call & Numerical \\
+      \texttt{blue}           & has bluetooth or not  & Categorical   \\
+      \texttt{dual\_sim}      & has dual sim support or not & Categorical \\
+      \texttt{four\_g}        & has 4G or not & Categorical \\
+      \texttt{three\_g}       & has 3G or not & Categorical \\
+      \texttt{wifi}           & has wifi or not & Categorical \\
+      \texttt{touch\_screen}  & has touch screen or not & Categorical \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+\end{frame}
+
+
+
+\section{Data Preprocessing}
+\begin{frame}{Data Cleaning}
+  \begin{block}<1->{}
+    \textbf{Handling Missing Values:} \small
+      A check for missing values revealed no missing values in the dataset.
+    \normalsize
+  \end{block}
+  \begin{block}<2->{}
+    \textbf{Handling Duplicate Values:} \small
+      Also, the dataset was checked for duplicate entries and none were found.
+    \normalsize
+  \end{block}
+  \begin{block}<3->{}
+    \textbf{Handling Invalid Values:} \small
+      The dataset was checked for negative entries and none were found in the dataset. \\ 
+      There are some features which can not be zero, like \texttt{battery\_power}, \texttt{ram}, etc. So, we checked for zero values in these features. We saw \texttt{px\_height} and \texttt{sc\_w} have 2 and 180 zero values respectively. We replaced these zero values with the mean of the respective features.
+    \normalsize
+  \end{block}
+\end{frame}
+
+
+
+\section{Acknowledgement}
+\begin{frame}{Acknowledgement}
+\end{frame}
+
+\section{References}
+\begin{frame}{References}
+\end{frame}
+
+\begin{frame}{}
+  \Huge
+  \centering
+  \textbf{Thank You!}
+\end{frame}
+
+\end{document}
