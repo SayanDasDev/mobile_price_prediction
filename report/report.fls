@@ -409,10 +409,14 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/ebgaramond/EBGaramond-Regular-
 INPUT c:/texlive/2024/texmf-dist/fonts/vf/public/ebgaramond/EBGaramond-Regular-osf-ts1.vf
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/ebgaramond/EBGaramond-Regular-osf-ts1--base.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond/ebg_yod6vr.enc
+INPUT ./all_feature_viz.png
+INPUT ./all_feature_viz.png
+INPUT ./all_feature_viz.png
+INPUT ./all_feature_viz.png
+INPUT ./all_feature_viz.png
 INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond-maths/a_w5zv5t.enc
 INPUT ./box_plots_before.png
 INPUT ./box_plots_before.png
 INPUT ./box_plots_before.png
@@ -434,6 +438,7 @@ INPUT ./corr_viz.png
 INPUT ./corr_viz.png
 INPUT ./corr_viz.png
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond/ebg_dacnth.enc
+INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond-maths/a_w5zv5t.enc
 INPUT ./cmat_LR.png
 INPUT ./cmat_LR.png
 INPUT ./cmat_LR.png

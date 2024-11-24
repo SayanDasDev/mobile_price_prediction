@@ -276,6 +276,16 @@ The dataset comprises 20 features that describe various characteristics of smart
 	\end{tabular}
 \end{table}
 Among these features, some are binary variables (e.g., blue, dual\_sim, four\_g, three\_g touch\_screen, wifi), while others are continuous variables (e.g., battery\_power, clock\_speed, int\_memory, ram, talk\_time). These features collectively provide a comprehensive overview of the smartphone's technical specifications and capabilities.
+
+A histogram visualization of all individual features is given below:
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=25em]{all_feature_viz.png}
+	\caption{Histogram visualization of all features.}
+	\label{all_feature_viz}
+\end{figure}
+This visualization give us insight into the distributions of the features. An important observation here is that px\_height can be normalized. Most of the categorical features are balanced except three\_g.
+
 \section{Target Variable}
 The target variable, price\_range, represents the categorization of smartphones into different price segments. It is a categorical variable with four distinct classes:
 \vspace{-1.25em}
@@ -291,103 +301,13 @@ The target variable, price\_range, represents the categorization of smartphones 
 \section{Data Cleaning}
 \subsection{Handling Missing Values}
 A check for missing values - \pythoninline{df.isnull().sum()} revealed no missing values in the dataset.
-\begin{python}
-battery_power    0
-blue             0
-clock_speed      0
-dual_sim         0
-fc               0
-four_g           0
-int_memory       0
-m_dep            0
-mobile_wt        0
-n_cores          0
-pc               0
-px_height        0
-px_width         0
-ram              0
-sc_h             0
-sc_w             0
-talk_time        0
-three_g          0
-touch_screen     0
-wifi             0
-price_range      0
-dtype: int64
-\end{python}
 \subsection{Handling Duplicate Values}
 Also, the dataset was checked for duplicate entries - \pythoninline{df.duplicated().sum()}. No duplicate entries were found.
-\begin{python}
-np.int64(0)
-\end{python}
 \subsection{Handling Invalid Values}
-The dataset was checked for negative entries with
-\begin{python}
-negative_counts = df.apply(lambda x: (x < 0).sum())
-print(negative_counts)
-\end{python}
-\begin{python}
-battery_power    0
-blue             0
-clock_speed      0
-dual_sim         0
-fc               0
-four_g           0
-int_memory       0
-m_dep            0
-mobile_wt        0
-n_cores          0
-pc               0
-px_height        0
-px_width         0
-ram              0
-sc_h             0
-sc_w             0
-talk_time        0
-three_g          0
-touch_screen     0
-wifi             0
-price_range      0
-dtype: int64
-\end{python}
-No negative values were found in the dataset.
+The dataset was checked for negative entries and none were found in the dataset.
+There are some features which can not be zero, like battery\_power, ram, etc. So, we checked for zero values in these features.
+We saw px\_height and sc\_w are have 2 and 180 zero values respectively. We will replace these zero values with the mean of the respective features.
 
-\noindent There are some features which can not be zero, like battery\_power, ram, etc. So, we checked for zero values in these features.
-\begin{python}
-zero_counts = df.apply(lambda x: (x == 0).sum())
-print(zero_counts)
-\end{python}
-\begin{python}
-battery_power       0
-blue             1010
-clock_speed         0
-dual_sim          981
-fc                474
-four_g            957
-int_memory          0
-m_dep               0
-mobile_wt           0
-n_cores             0
-pc                101
-px_height           2
-px_width            0
-ram                 0
-sc_h                0
-sc_w              180
-talk_time           0
-three_g           477
-touch_screen      994
-wifi              986
-price_range       500
-dtype: int64
-\end{python}
-We can see px\_height and sc\_w are have 2 and 180 zero values respectively. We will replace these zero values with the mean of the respective features.
-\begin{python}
-to_replace_with_mean = ['sc_w', 'px_height']
-
-for feature in to_replace_with_mean:
-	df[feature] = df[feature].replace(0, df[feature].mean())
-\end{python}
 Note that fc and pc are numerical yet zero values are not invalid. They can be zero if the phone does not have a front or primary camera.
 
 \section{Outlier Handling}
@@ -406,7 +326,9 @@ The box plots revealed outliers in two features, fc and px\_height. To address t
 	\label{box_plots_after}
 \end{figure}
 \section{Class Imbalance Check}
-Class imbalance can affect the performance of classification models. To check for class imbalance, the distribution of the target variable was visualized using a count plot.
+Class imbalance can affect the performance of classification models. To check for class imbalance, the distribution of the target variable was visualized using a count plot. 
+
+We saw that the dataset was balanced across all four price range categories.
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=10em]{imbalance_check.png}
@@ -422,7 +344,7 @@ A correlation matrix was generated to identify the relationships between differe
 	\caption{Correlation heatmap of features.}
 	\label{corr_viz}
 \end{figure}
-Here we can see that ram is highly correlated with price range. There are some features which are correlated with each other like:
+Here we saw that ram is highly correlated with price range. There are some features which are correlated with each other like:
 \vspace{-1.25em}
 \begin{enumerate}
 	\setlength\itemsep{-1.05em}
@@ -438,31 +360,18 @@ Feature engineering involved creating new features from existing ones to enhance
 \begin{enumerate}
 	\setlength\itemsep{-1.05em}
 	\item{\textbf{px\_area :}} The total pixel area of the smartphone screen, calculated as the product of pixel resolution height (px\_height) and pixel resolution width (px\_width).
-	\begin{python}
-	df['px_area'] = df['px_height'] * df['px_width']
-	\end{python}
 	\item{\textbf{screen\_area :}} The physical screen area of the smartphone, calculated as the product of screen height (sc\_h) and screen width (sc\_w).
-	\begin{python}
-	df['screen_area'] = df['sc_h'] * df['sc_w']
-	\end{python}
 \end{enumerate}
 After deriving the new features, the original components (px\_height, px\_width, sc\_h, sc\_w) were removed from the dataset:
-\begin{python}
-df.drop(['px_height', 'px_width', 'sc_h', 'sc_w'], axis=1, inplace=True)
-\end{python}
 Next, based on correlation analysis, the following redundant features were removed:
 \vspace{-1.25em}
 \begin{itemize}
 	\setlength\itemsep{-1.05em}
 	\item A high correlation exists between 3G and 4G, as devices with 4G generally support 3G. The 4G feature was retained, and 3G was removed.
-	\begin{python}
-	df = df.drop(['three_g'], axis=1)
-	\end{python}
-	\item Front and primary cameras are correlated, as primary cameras often accompany front cameras. The pc feature was retained, and fc was removed.	
-	\begin{python}
-	df = df.drop(['fc'], axis=1)
-	\end{python}
+	\item Front and primary cameras are correlated, as primary cameras often accompany front cameras. The pc feature was retained, and fc was removed.
 \end{itemize}
+
+The correalation matrix after feature engineering is as follows:
 
 \section{Feature Selection}
 We preformed feature selection to identify the most relevant features for predicting smartphone prices. This step involved analyzing feature importance scores from machine learning models, conducting correlation analysis, and using domain knowledge to select the most influential features. Feature selection is aimed to reduce model complexity and improve prediction accuracy.

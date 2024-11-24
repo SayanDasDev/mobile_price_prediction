@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.18)  23 NOV 2024 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.18)  24 NOV 2024 10:36
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -894,7 +894,7 @@ LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/n' will be
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 ...e {IV.7}Train-Test Split}{19}{section.4.7}
+l.20 ...e {IV.7}Train-Test Split}{17}{section.4.7}
                                                   % [1
 
 
@@ -958,212 +958,206 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--229
 [9
 
 ]
+<all_feature_viz.png, id=283, 1798.8003pt x 1345.6674pt>
+File: all_feature_viz.png Graphic file (type png)
+<use all_feature_viz.png>
+Package pdftex.def Info: all_feature_viz.png  used on input line 283.
+(pdftex.def)             Requested size: 401.0072pt x 300.0pt.
+
 
 [10]
 
-[11]
+[11 <./all_feature_viz.png>]
 Section IV.
 (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/05/25 1.10b listings language file
 )
+<box_plots_before.png, id=295, 1582.713pt x 1167.8832pt>
+File: box_plots_before.png Graphic file (type png)
+<use box_plots_before.png>
+Package pdftex.def Info: box_plots_before.png  used on input line 317.
+(pdftex.def)             Requested size: 406.54488pt x 300.0pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--320
+
+ []
+
+
 
 [12
 
 ]
-LaTeX Font Info:    Trying to load font information for OML+EBGaramond-OsF on input line 326.
-LaTeX Font Info:    No file OMLEBGaramond-OsF.fd. on input line 326.
-
-
-LaTeX Font Warning: Font shape `OML/EBGaramond-OsF/m/n' undefined
-(Font)              using `OML/EBGaramond-Maths/m/it' instead
-(Font)              for symbol `textless' on input line 326.
-
-
-
-[13{c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond-maths/a_w5zv5t.enc}]
-
-[14]
-<box_plots_before.png, id=385, 1582.713pt x 1167.8832pt>
-File: box_plots_before.png Graphic file (type png)
-<use box_plots_before.png>
-Package pdftex.def Info: box_plots_before.png  used on input line 397.
-(pdftex.def)             Requested size: 406.54488pt x 300.0pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 394--400
-
- []
-
-<box_plots_after.png, id=387, 1582.713pt x 1167.8832pt>
+<box_plots_after.png, id=303, 1582.713pt x 1167.8832pt>
 File: box_plots_after.png Graphic file (type png)
 <use box_plots_after.png>
-Package pdftex.def Info: box_plots_after.png  used on input line 404.
+Package pdftex.def Info: box_plots_after.png  used on input line 324.
 (pdftex.def)             Requested size: 406.54488pt x 300.0pt.
 
 
-[15 <./box_plots_before.png>]
-<imbalance_check.png, id=399, 412.6617pt x 312.9291pt>
+[13 <./box_plots_before.png>]
+<imbalance_check.png, id=310, 412.6617pt x 312.9291pt>
 File: imbalance_check.png Graphic file (type png)
 <use imbalance_check.png>
-Package pdftex.def Info: imbalance_check.png  used on input line 412.
+Package pdftex.def Info: imbalance_check.png  used on input line 334.
 (pdftex.def)             Requested size: 158.24242pt x 120.0pt.
 
 
-[16 <./box_plots_after.png> <./imbalance_check.png>]
-<corr_viz.png, id=408, 716.1957pt x 667.0521pt>
+[14 <./box_plots_after.png> <./imbalance_check.png>]
+<corr_viz.png, id=320, 716.1957pt x 667.0521pt>
 File: corr_viz.png Graphic file (type png)
 <use corr_viz.png>
-Package pdftex.def Info: corr_viz.png  used on input line 421.
+Package pdftex.def Info: corr_viz.png  used on input line 343.
 (pdftex.def)             Requested size: 450.95433pt x 420.0pt.
 
 
-[17 <./corr_viz.png>]
+[15 <./corr_viz.png>]
 
-[18]
-Overfull \hbox (2.66534pt too wide) in paragraph at lines 470--477
+[16]
+Overfull \hbox (2.66534pt too wide) in paragraph at lines 379--386
 \OT1/EBGaramond-OsF/m/n/12 The [][][] method from [][][][][] is used with the scor-ing func-tion [][][], which
  []
 
 
 
-[19{c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond/ebg_dacnth.enc}]
+[17{c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond/ebg_dacnth.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond-maths/a_w5zv5t.enc}]
 
-[20]
+[18]
 Section V.
 
 
-[21
+[19
 
 ]
 
-[22]
+[20]
 
-[23]
+[21]
 Section VI.
 
 
-[24
+[22
 
 ]
-LaTeX Font Info:    Trying to load font information for OMS+EBGaramond-OsF on input line 586.
-LaTeX Font Info:    No file OMSEBGaramond-OsF.fd. on input line 586.
+LaTeX Font Info:    Trying to load font information for OMS+EBGaramond-OsF on input line 495.
+LaTeX Font Info:    No file OMSEBGaramond-OsF.fd. on input line 495.
 
 
 LaTeX Font Warning: Font shape `OMS/EBGaramond-OsF/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 586.
+(Font)              for symbol `textbraceleft' on input line 495.
+
+
+
+[23]
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 569--571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
+
+ []
 
 
 
 [25]
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 660--662
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 676--677
-
- []
-
-
-
-[27]
-Overfull \hbox (19.5807pt too wide) in paragraph at lines 685--686
+Overfull \hbox (19.5807pt too wide) in paragraph at lines 594--595
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 
-[28]
+[26]
 Section VII.
-<cmat_LR.png, id=618, 368.577pt x 284.0211pt>
+<cmat_LR.png, id=520, 368.577pt x 284.0211pt>
 File: cmat_LR.png Graphic file (type png)
 <use cmat_LR.png>
-Package pdftex.def Info: cmat_LR.png  used on input line 717.
+Package pdftex.def Info: cmat_LR.png  used on input line 626.
 (pdftex.def)             Requested size: 218.0153pt x 168.0pt.
-<cmat_KNN.png, id=619, 362.0727pt x 284.0211pt>
+<cmat_KNN.png, id=521, 362.0727pt x 284.0211pt>
 File: cmat_KNN.png Graphic file (type png)
 <use cmat_KNN.png>
-Package pdftex.def Info: cmat_KNN.png  used on input line 724.
+Package pdftex.def Info: cmat_KNN.png  used on input line 633.
 (pdftex.def)             Requested size: 214.16798pt x 168.0pt.
-<cmat_RF.png, id=620, 368.577pt x 284.0211pt>
+<cmat_RF.png, id=522, 368.577pt x 284.0211pt>
 File: cmat_RF.png Graphic file (type png)
 <use cmat_RF.png>
-Package pdftex.def Info: cmat_RF.png  used on input line 734.
+Package pdftex.def Info: cmat_RF.png  used on input line 643.
 (pdftex.def)             Requested size: 218.0153pt x 168.0pt.
-<cmat_DT.png, id=621, 368.577pt x 284.0211pt>
+<cmat_DT.png, id=523, 368.577pt x 284.0211pt>
 File: cmat_DT.png Graphic file (type png)
 <use cmat_DT.png>
-Package pdftex.def Info: cmat_DT.png  used on input line 741.
+Package pdftex.def Info: cmat_DT.png  used on input line 650.
 (pdftex.def)             Requested size: 218.0153pt x 168.0pt.
 
 
-[29
+[27
 
  <./cmat_LR.png> <./cmat_KNN.png>]
-<cmat_SVM.png, id=630, 368.577pt x 284.0211pt>
+<cmat_SVM.png, id=533, 368.577pt x 284.0211pt>
 File: cmat_SVM.png Graphic file (type png)
 <use cmat_SVM.png>
-Package pdftex.def Info: cmat_SVM.png  used on input line 752.
+Package pdftex.def Info: cmat_SVM.png  used on input line 661.
 (pdftex.def)             Requested size: 218.0153pt x 168.0pt.
-<cmat_XG.png, id=631, 368.577pt x 284.0211pt>
+<cmat_XG.png, id=534, 368.577pt x 284.0211pt>
 File: cmat_XG.png Graphic file (type png)
 <use cmat_XG.png>
-Package pdftex.def Info: cmat_XG.png  used on input line 759.
+Package pdftex.def Info: cmat_XG.png  used on input line 668.
 (pdftex.def)             Requested size: 218.0153pt x 168.0pt.
-<cmat_VC.png, id=632, 368.577pt x 284.0211pt>
+<cmat_VC.png, id=535, 368.577pt x 284.0211pt>
 File: cmat_VC.png Graphic file (type png)
 <use cmat_VC.png>
-Package pdftex.def Info: cmat_VC.png  used on input line 766.
+Package pdftex.def Info: cmat_VC.png  used on input line 675.
 (pdftex.def)             Requested size: 218.0153pt x 168.0pt.
 
 
-[30 <./cmat_RF.png> <./cmat_DT.png> <./cmat_SVM.png> <./cmat_XG.png> <./cmat_VC.png>]
+[28 <./cmat_RF.png> <./cmat_DT.png> <./cmat_SVM.png> <./cmat_XG.png> <./cmat_VC.png>]
 
-[31]
+[29]
 
-[32]
+[30]
 Section VIII.
 
-Underfull \hbox (badness 10000) in paragraph at lines 822--824
+Underfull \hbox (badness 10000) in paragraph at lines 731--733
 
  []
 
 
 
-[33
+[31
 
 ]
 Section IX.
 
 
-[34
+[32
 
 ]
 
-[35]
+[33]
 
-[36]
+[34]
 LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 930.
+(Font)              scaled to size 12.0pt on input line 839.
 
-Underfull \hbox (badness 1038) in paragraph at lines 936--937
+Underfull \hbox (badness 1038) in paragraph at lines 845--846
 []\OT1/EBGaramond-OsF/m/n/12 Chandrashekhara, K. T., and M. Thunga-mani. "Smart-phone Price Pre-dic-tion in Re-tail In-dus-try Us-ing Ma-
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 936--937
+Underfull \hbox (badness 1237) in paragraph at lines 845--846
 \OT1/EBGaramond-OsF/m/n/12 chine Learn-ing Tech-niques." In \OT1/EBGaramond-OsF/m/it/12 Emerg-ing Re-search in Elec-tron-ics, Com-puter Sci-ence and Tech-nol-ogy, Lec-ture
  []
 
 
 
-[37
+[35
 
 ]
 
-[38] (./report.aux)
+[36] (./report.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1176,18 +1170,18 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 8CD8D0A974862E756ADB00B629F3AC96;5468.
  ) 
 Here is how much of TeX's memory you used:
- 28966 strings out of 473584
- 535139 string characters out of 5732357
- 1965908 words of memory out of 5000000
- 50986 multiletter control sequences out of 15000+600000
+ 28800 strings out of 473584
+ 532821 string characters out of 5732357
+ 1963908 words of memory out of 5000000
+ 50913 multiletter control sequences out of 15000+600000
  588557 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,101p,1374b,2088s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Bold.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Italic.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Regular.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on report.pdf (39 pages, 769237 bytes).
+Output written on report.pdf (37 pages, 1031956 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
- 730 compressed objects within 8 object streams
- 341 named destinations out of 1000 (max. 500000)
- 396 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 708 PDF objects out of 1000 (max. 8388607)
+ 615 compressed objects within 7 object streams
+ 248 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 
