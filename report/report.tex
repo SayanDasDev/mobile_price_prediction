@@ -355,7 +355,7 @@ A correlation matrix was generated to identify the relationships between differe
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=35em]{corr_viz.png}
-	\caption{Correlation heatmap of features.}
+	\caption{Correlation heatmap of features}
 	\label{corr_viz}
 \end{figure}
 Here we saw that ram is highly correlated with price range. There are some features which are correlated with each other like:
@@ -389,7 +389,7 @@ The correlation matrix after feature engineering is as follows:
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=35em]{corr_viz_after_fe.png}
-	\caption{Correlation heatmap of features.}
+	\caption{Correlation heatmap of features after feature engineering}
 	\label{corr_viz_after_feature_engineering}
 \end{figure}
 
@@ -904,7 +904,7 @@ Next we will look at the ROC-AUC and Precision-Recall curves.
     \label{ra_pr_XG}
 \end{figure}
 
-By analsing the above curves we infer the following:
+By analyzing the above curves we infer the following:
 \vspace{-1.25em}
 \begin{itemize}
 	\setlength\itemsep{-1.5em}
@@ -1055,6 +1055,10 @@ Comparing the matrices form Table \ref{tab:model_perf_mat} amd Table \ref{tab:tu
 \textbf{Logistic Regression} performed reliably, especially after minor improvements post-tuning. \textbf{KNN} and \textbf{Decision Tree} struggled with certain classes, as evident from their lower Precision-Recall curves. \textbf{XGBoost} and \textbf{SVM} consistently achieved high F1-scores, indicating a strong balance between precision and recall. 
 
 \textbf{Random Forest}, \textbf{Decision Tree}, and \textbf{XGBoost} are inherently complex and hence prone to overfitting. \textbf{GridSearchCV} significantly improved the balance between training and test metrics for most models, particularly \textbf{KNN} and \textbf{SVM}.
+
+The most import feature was \textbf{RAM}, followed by \textbf{Pixel Area} and \textbf{Battery Power}. These features had the most significant impact on the model's predictions, aligning with common consumer preferences for smartphones.
+
+We finally selected \textbf{Logistic Regression} as the best model due to its consistent high performance across all metrics, including accuracy, precision, recall, and F1-score. Also it being a simple model, takes less time to train.
 
 \section{Anomalies and Unexpected Findings}
 The dataset we chose did not have any class imbalances but there may have been challenges related to it, which can affect model predictions, particularly in underrepresented categories. \\

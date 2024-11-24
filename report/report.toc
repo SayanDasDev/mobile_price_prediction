@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {VII.3}Comparison between different Models}{38}{section.7.3}%
 \contentsline {chapter}{\numberline {VIII}Discussion}{40}{chapter.8}%
 \contentsline {section}{\numberline {VIII.1}Analysis of Results}{40}{section.8.1}%
-\contentsline {section}{\numberline {VIII.2}Anomalies and Unexpected Findings}{40}{section.8.2}%
+\contentsline {section}{\numberline {VIII.2}Anomalies and Unexpected Findings}{41}{section.8.2}%
 \contentsline {section}{\numberline {VIII.3}Limitations}{41}{section.8.3}%
 \contentsline {chapter}{\numberline {IX}Conclusion}{42}{chapter.9}%
 \contentsline {section}{\numberline {IX.1}Key Takeaways}{42}{section.9.1}%
