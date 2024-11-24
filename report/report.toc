@@ -26,10 +26,10 @@
 \contentsline {chapter}{\numberline {VI}Implementation}{23}{chapter.6}%
 \contentsline {section}{\numberline {VI.1}Tools and Libraries}{23}{section.6.1}%
 \contentsline {section}{\numberline {VI.2}Parameters}{24}{section.6.2}%
-\contentsline {section}{\numberline {VI.3}Training Process}{26}{section.6.3}%
-\contentsline {chapter}{\numberline {VII}Results}{28}{chapter.7}%
-\contentsline {section}{\numberline {VII.1}Plots}{28}{section.7.1}%
-\contentsline {section}{\numberline {VII.2}Evaluation Metrics}{30}{section.7.2}%
+\contentsline {section}{\numberline {VI.3}Training Process}{25}{section.6.3}%
+\contentsline {chapter}{\numberline {VII}Results}{26}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Plots}{26}{section.7.1}%
+\contentsline {section}{\numberline {VII.2}Evaluation Metrics}{29}{section.7.2}%
 \contentsline {section}{\numberline {VII.3}Comparison between different Models}{30}{section.7.3}%
 \contentsline {chapter}{\numberline {VIII}Discussion}{32}{chapter.8}%
 \contentsline {section}{\numberline {VIII.1}Analysis of Results}{32}{section.8.1}%
