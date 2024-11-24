@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.18)  24 NOV 2024 22:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.18)  24 NOV 2024 23:43
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -988,9 +988,6 @@ Package pdftex.def Info: all_feature_viz.png  used on input line 280.
 Section IV.
 LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/b/n' will be
 (Font)              scaled to size 14.4pt on input line 299.
-(c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/05/25 1.10b listings language file
-)
 <box_plots_before.png, id=304, 1582.713pt x 1167.8832pt>
 File: box_plots_before.png Graphic file (type png)
 <use box_plots_before.png>
@@ -1013,12 +1010,12 @@ LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/n' will be
 
 
 [13{c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond/ebg_dacnth.enc}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/ebgaramond-maths/a_w5zv5t.enc} <./box_plots_before.png>]
-<box_plots_after.png, id=322, 1582.713pt x 1167.8832pt>
+<box_plots_after.png, id=320, 1582.713pt x 1167.8832pt>
 File: box_plots_after.png Graphic file (type png)
 <use box_plots_after.png>
 Package pdftex.def Info: box_plots_after.png  used on input line 338.
 (pdftex.def)             Requested size: 406.54488pt x 300.0pt.
-<imbalance_check.png, id=323, 412.6617pt x 312.9291pt>
+<imbalance_check.png, id=321, 412.6617pt x 312.9291pt>
 File: imbalance_check.png Graphic file (type png)
 <use imbalance_check.png>
 Package pdftex.def Info: imbalance_check.png  used on input line 348.
@@ -1026,7 +1023,7 @@ Package pdftex.def Info: imbalance_check.png  used on input line 348.
 
 
 [14 <./box_plots_after.png>]
-<corr_viz.png, id=330, 716.1957pt x 667.0521pt>
+<corr_viz.png, id=328, 716.1957pt x 667.0521pt>
 File: corr_viz.png Graphic file (type png)
 <use corr_viz.png>
 Package pdftex.def Info: corr_viz.png  used on input line 357.
@@ -1036,14 +1033,16 @@ Package pdftex.def Info: corr_viz.png  used on input line 357.
 [15 <./imbalance_check.png>]
 
 [16 <./corr_viz.png>]
-<corr_viz_after_fe.png, id=347, 716.1957pt x 667.0521pt>
+<corr_viz_after_fe.png, id=345, 716.1957pt x 667.0521pt>
 File: corr_viz_after_fe.png Graphic file (type png)
 <use corr_viz_after_fe.png>
 Package pdftex.def Info: corr_viz_after_fe.png  used on input line 391.
 (pdftex.def)             Requested size: 450.95433pt x 420.0pt.
 
 
-[17]
+[17] (c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/05/25 1.10b listings language file
+)
 Overfull \hbox (2.66534pt too wide) in paragraph at lines 399--407
 \OT1/EBGaramond-OsF/m/n/12 The [][][] method from [][][][][] is used with the scor-ing func-tion [][][], which
  []
@@ -1051,12 +1050,12 @@ Overfull \hbox (2.66534pt too wide) in paragraph at lines 399--407
 
 
 [18 <./corr_viz_after_fe.png>]
-<nrmlz_plots.png, id=361, 1438.173pt x 1076.823pt>
+<nrmlz_plots.png, id=359, 1438.173pt x 1076.823pt>
 File: nrmlz_plots.png Graphic file (type png)
 <use nrmlz_plots.png>
 Package pdftex.def Info: nrmlz_plots.png  used on input line 413.
 (pdftex.def)             Requested size: 400.66678pt x 300.0pt.
-<nrmlz_px_ba.png, id=362, 859.2903pt x 426.393pt>
+<nrmlz_px_ba.png, id=360, 859.2903pt x 426.393pt>
 File: nrmlz_px_ba.png Graphic file (type png)
 <use nrmlz_px_ba.png>
 Package pdftex.def Info: nrmlz_px_ba.png  used on input line 421.
@@ -1064,7 +1063,7 @@ Package pdftex.def Info: nrmlz_px_ba.png  used on input line 421.
 
 
 [19 <./nrmlz_plots.png>]
-<nrmlz_screen_ba.png, id=369, 859.2903pt x 426.393pt>
+<nrmlz_screen_ba.png, id=368, 859.2903pt x 426.393pt>
 File: nrmlz_screen_ba.png Graphic file (type png)
 <use nrmlz_screen_ba.png>
 Package pdftex.def Info: nrmlz_screen_ba.png  used on input line 427.
@@ -1115,12 +1114,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 539--540
 
 [26]
 Section VII.
-<lc_LR.png, id=442, 287.6346pt x 228.3732pt>
+<lc_LR.png, id=441, 287.6346pt x 228.3732pt>
 File: lc_LR.png Graphic file (type png)
 <use lc_LR.png>
 Package pdftex.def Info: lc_LR.png  used on input line 566.
 (pdftex.def)             Requested size: 181.37752pt x 144.0pt.
-<lc_tuned_LR.png, id=443, 316.5426pt x 228.3732pt>
+<lc_tuned_LR.png, id=442, 316.5426pt x 228.3732pt>
 File: lc_tuned_LR.png Graphic file (type png)
 <use lc_tuned_LR.png>
 Package pdftex.def Info: lc_tuned_LR.png  used on input line 573.
@@ -1130,32 +1129,32 @@ Package pdftex.def Info: lc_tuned_LR.png  used on input line 573.
 [27
 
 ]
-<lc_KNN.png, id=448, 281.853pt x 228.3732pt>
+<lc_KNN.png, id=447, 281.853pt x 228.3732pt>
 File: lc_KNN.png Graphic file (type png)
 <use lc_KNN.png>
 Package pdftex.def Info: lc_KNN.png  used on input line 583.
 (pdftex.def)             Requested size: 177.73175pt x 144.0pt.
-<lc_tuned_KNN.png, id=449, 281.853pt x 228.3732pt>
+<lc_tuned_KNN.png, id=448, 281.853pt x 228.3732pt>
 File: lc_tuned_KNN.png Graphic file (type png)
 <use lc_tuned_KNN.png>
 Package pdftex.def Info: lc_tuned_KNN.png  used on input line 590.
 (pdftex.def)             Requested size: 177.73175pt x 144.0pt.
-<lc_RF.png, id=450, 281.853pt x 228.3732pt>
+<lc_RF.png, id=449, 281.853pt x 228.3732pt>
 File: lc_RF.png Graphic file (type png)
 <use lc_RF.png>
 Package pdftex.def Info: lc_RF.png  used on input line 600.
 (pdftex.def)             Requested size: 177.73175pt x 144.0pt.
-<lc_tuned_RF.png, id=451, 304.2567pt x 228.3732pt>
+<lc_tuned_RF.png, id=450, 304.2567pt x 228.3732pt>
 File: lc_tuned_RF.png Graphic file (type png)
 <use lc_tuned_RF.png>
 Package pdftex.def Info: lc_tuned_RF.png  used on input line 607.
 (pdftex.def)             Requested size: 191.85915pt x 144.0pt.
-<lc_DT.png, id=452, 281.853pt x 228.3732pt>
+<lc_DT.png, id=451, 281.853pt x 228.3732pt>
 File: lc_DT.png Graphic file (type png)
 <use lc_DT.png>
 Package pdftex.def Info: lc_DT.png  used on input line 617.
 (pdftex.def)             Requested size: 177.73175pt x 144.0pt.
-<lc_tuned_DT.png, id=453, 299.1978pt x 228.3732pt>
+<lc_tuned_DT.png, id=452, 299.1978pt x 228.3732pt>
 File: lc_tuned_DT.png Graphic file (type png)
 <use lc_tuned_DT.png>
 Package pdftex.def Info: lc_tuned_DT.png  used on input line 624.
@@ -1163,22 +1162,22 @@ Package pdftex.def Info: lc_tuned_DT.png  used on input line 624.
 
 
 [28 <./lc_LR.png> <./lc_tuned_LR.png> <./lc_KNN.png> <./lc_tuned_KNN.png> <./lc_RF.png> <./lc_tuned_RF.png>]
-<lc_SVM.png, id=470, 281.853pt x 228.3732pt>
+<lc_SVM.png, id=469, 281.853pt x 228.3732pt>
 File: lc_SVM.png Graphic file (type png)
 <use lc_SVM.png>
 Package pdftex.def Info: lc_SVM.png  used on input line 634.
 (pdftex.def)             Requested size: 177.73175pt x 144.0pt.
-<lc_tuned_SVM.png, id=471, 281.853pt x 228.3732pt>
+<lc_tuned_SVM.png, id=470, 281.853pt x 228.3732pt>
 File: lc_tuned_SVM.png Graphic file (type png)
 <use lc_tuned_SVM.png>
 Package pdftex.def Info: lc_tuned_SVM.png  used on input line 641.
 (pdftex.def)             Requested size: 177.73175pt x 144.0pt.
-<lc_XG.png, id=472, 281.853pt x 228.3732pt>
+<lc_XG.png, id=471, 281.853pt x 228.3732pt>
 File: lc_XG.png Graphic file (type png)
 <use lc_XG.png>
 Package pdftex.def Info: lc_XG.png  used on input line 651.
 (pdftex.def)             Requested size: 177.73175pt x 144.0pt.
-<lc_tuned_XG.png, id=473, 284.7438pt x 228.3732pt>
+<lc_tuned_XG.png, id=472, 284.7438pt x 228.3732pt>
 File: lc_tuned_XG.png Graphic file (type png)
 <use lc_tuned_XG.png>
 Package pdftex.def Info: lc_tuned_XG.png  used on input line 658.
@@ -1186,12 +1185,12 @@ Package pdftex.def Info: lc_tuned_XG.png  used on input line 658.
 
 
 [29 <./lc_DT.png> <./lc_tuned_DT.png> <./lc_SVM.png> <./lc_tuned_SVM.png> <./lc_XG.png> <./lc_tuned_XG.png>]
-<cmat_LR.png, id=490, 270.2898pt x 228.3732pt>
+<cmat_LR.png, id=489, 270.2898pt x 228.3732pt>
 File: cmat_LR.png Graphic file (type png)
 <use cmat_LR.png>
 Package pdftex.def Info: cmat_LR.png  used on input line 717.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_LR.png, id=491, 329.5512pt x 228.3732pt>
+<cmat_tuned_LR.png, id=490, 329.5512pt x 228.3732pt>
 File: cmat_tuned_LR.png Graphic file (type png)
 <use cmat_tuned_LR.png>
 Package pdftex.def Info: cmat_tuned_LR.png  used on input line 724.
@@ -1199,12 +1198,12 @@ Package pdftex.def Info: cmat_tuned_LR.png  used on input line 724.
 
 
 [30]
-<cmat_KNN.png, id=497, 263.7855pt x 228.3732pt>
+<cmat_KNN.png, id=496, 263.7855pt x 228.3732pt>
 File: cmat_KNN.png Graphic file (type png)
 <use cmat_KNN.png>
 Package pdftex.def Info: cmat_KNN.png  used on input line 734.
 (pdftex.def)             Requested size: 166.33868pt x 144.0pt.
-<cmat_tuned_KNN.png, id=498, 263.7855pt x 228.3732pt>
+<cmat_tuned_KNN.png, id=497, 263.7855pt x 228.3732pt>
 File: cmat_tuned_KNN.png Graphic file (type png)
 <use cmat_tuned_KNN.png>
 Package pdftex.def Info: cmat_tuned_KNN.png  used on input line 741.
@@ -1214,32 +1213,32 @@ Underfull \hbox (badness 6808) in paragraph at lines 742--742
 []\OT1/EBGaramond-OsF/m/n/12 Figure VII.16: []Confusion Ma-trix for K-Nearest
  []
 
-<cmat_RF.png, id=499, 270.2898pt x 228.3732pt>
+<cmat_RF.png, id=498, 270.2898pt x 228.3732pt>
 File: cmat_RF.png Graphic file (type png)
 <use cmat_RF.png>
 Package pdftex.def Info: cmat_RF.png  used on input line 752.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_RF.png, id=500, 304.2567pt x 228.3732pt>
+<cmat_tuned_RF.png, id=499, 304.2567pt x 228.3732pt>
 File: cmat_tuned_RF.png Graphic file (type png)
 <use cmat_tuned_RF.png>
 Package pdftex.def Info: cmat_tuned_RF.png  used on input line 759.
 (pdftex.def)             Requested size: 191.85915pt x 144.0pt.
-<cmat_DT.png, id=501, 270.2898pt x 228.3732pt>
+<cmat_DT.png, id=500, 270.2898pt x 228.3732pt>
 File: cmat_DT.png Graphic file (type png)
 <use cmat_DT.png>
 Package pdftex.def Info: cmat_DT.png  used on input line 769.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_DT.png, id=502, 294.1389pt x 228.3732pt>
+<cmat_tuned_DT.png, id=501, 294.1389pt x 228.3732pt>
 File: cmat_tuned_DT.png Graphic file (type png)
 <use cmat_tuned_DT.png>
 Package pdftex.def Info: cmat_tuned_DT.png  used on input line 776.
 (pdftex.def)             Requested size: 185.47902pt x 144.0pt.
-<cmat_SVM.png, id=503, 270.2898pt x 228.3732pt>
+<cmat_SVM.png, id=502, 270.2898pt x 228.3732pt>
 File: cmat_SVM.png Graphic file (type png)
 <use cmat_SVM.png>
 Package pdftex.def Info: cmat_SVM.png  used on input line 785.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_SVM.png, id=504, 270.2898pt x 228.3732pt>
+<cmat_tuned_SVM.png, id=503, 270.2898pt x 228.3732pt>
 File: cmat_tuned_SVM.png Graphic file (type png)
 <use cmat_tuned_SVM.png>
 Package pdftex.def Info: cmat_tuned_SVM.png  used on input line 792.
@@ -1247,12 +1246,12 @@ Package pdftex.def Info: cmat_tuned_SVM.png  used on input line 792.
 
 
 [31 <./cmat_LR.png> <./cmat_tuned_LR.png> <./cmat_KNN.png> <./cmat_tuned_KNN.png> <./cmat_RF.png> <./cmat_tuned_RF.png>]
-<cmat_XG.png, id=521, 270.2898pt x 228.3732pt>
+<cmat_XG.png, id=520, 270.2898pt x 228.3732pt>
 File: cmat_XG.png Graphic file (type png)
 <use cmat_XG.png>
 Package pdftex.def Info: cmat_XG.png  used on input line 801.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_XG.png, id=522, 274.626pt x 228.3732pt>
+<cmat_tuned_XG.png, id=521, 274.626pt x 228.3732pt>
 File: cmat_tuned_XG.png Graphic file (type png)
 <use cmat_tuned_XG.png>
 Package pdftex.def Info: cmat_tuned_XG.png  used on input line 808.
@@ -1260,7 +1259,7 @@ Package pdftex.def Info: cmat_tuned_XG.png  used on input line 808.
 
 
 [32 <./cmat_DT.png> <./cmat_tuned_DT.png> <./cmat_SVM.png> <./cmat_tuned_SVM.png> <./cmat_XG.png> <./cmat_tuned_XG.png>]
-<ra_pr_LR.png, id=539, 859.2903pt x 354.123pt>
+<ra_pr_LR.png, id=538, 859.2903pt x 354.123pt>
 File: ra_pr_LR.png Graphic file (type png)
 <use ra_pr_LR.png>
 Package pdftex.def Info: ra_pr_LR.png  used on input line 867.
@@ -1268,17 +1267,17 @@ Package pdftex.def Info: ra_pr_LR.png  used on input line 867.
 
 
 [33]
-<ra_pr_KNN.png, id=544, 859.2903pt x 354.123pt>
+<ra_pr_KNN.png, id=543, 859.2903pt x 354.123pt>
 File: ra_pr_KNN.png Graphic file (type png)
 <use ra_pr_KNN.png>
 Package pdftex.def Info: ra_pr_KNN.png  used on input line 874.
 (pdftex.def)             Requested size: 407.66888pt x 168.0pt.
-<ra_pr_RF.png, id=545, 859.2903pt x 354.123pt>
+<ra_pr_RF.png, id=544, 859.2903pt x 354.123pt>
 File: ra_pr_RF.png Graphic file (type png)
 <use ra_pr_RF.png>
 Package pdftex.def Info: ra_pr_RF.png  used on input line 881.
 (pdftex.def)             Requested size: 407.66888pt x 168.0pt.
-<ra_pr_DT.png, id=546, 859.2903pt x 354.123pt>
+<ra_pr_DT.png, id=545, 859.2903pt x 354.123pt>
 File: ra_pr_DT.png Graphic file (type png)
 <use ra_pr_DT.png>
 Package pdftex.def Info: ra_pr_DT.png  used on input line 888.
@@ -1286,12 +1285,12 @@ Package pdftex.def Info: ra_pr_DT.png  used on input line 888.
 
 
 [34 <./ra_pr_LR.png> <./ra_pr_KNN.png> <./ra_pr_RF.png>]
-<ra_pr_SVM.png, id=557, 859.2903pt x 354.123pt>
+<ra_pr_SVM.png, id=556, 859.2903pt x 354.123pt>
 File: ra_pr_SVM.png Graphic file (type png)
 <use ra_pr_SVM.png>
 Package pdftex.def Info: ra_pr_SVM.png  used on input line 895.
 (pdftex.def)             Requested size: 407.66888pt x 168.0pt.
-<ra_pr_XG.png, id=558, 859.2903pt x 354.123pt>
+<ra_pr_XG.png, id=557, 859.2903pt x 354.123pt>
 File: ra_pr_XG.png Graphic file (type png)
 <use ra_pr_XG.png>
 Package pdftex.def Info: ra_pr_XG.png  used on input line 902.
@@ -1587,18 +1586,18 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 941C36B2BA3D37CDE3F3623DC37D8E79;5680.
  ) 
 Here is how much of TeX's memory you used:
- 28961 strings out of 473584
- 536219 string characters out of 5732357
- 1953908 words of memory out of 5000000
- 51123 multiletter control sequences out of 15000+600000
+ 28954 strings out of 473584
+ 536145 string characters out of 5732357
+ 1954908 words of memory out of 5000000
+ 51116 multiletter control sequences out of 15000+600000
  596776 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,101p,1397b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Bold.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Italic.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Regular.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on report.pdf (48 pages, 2044870 bytes).
+ 99i,12n,101p,1397b,1321s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Bold.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Italic.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Regular.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on report.pdf (48 pages, 2041968 bytes).
 PDF statistics:
- 740 PDF objects out of 1000 (max. 8388607)
- 583 compressed objects within 6 object streams
+ 735 PDF objects out of 1000 (max. 8388607)
+ 580 compressed objects within 6 object streams
  197 named destinations out of 1000 (max. 500000)
  552 words of extra memory for PDF output out of 10000 (max. 10000000)
 

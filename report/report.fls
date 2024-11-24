@@ -432,9 +432,6 @@ INPUT ./all_feature_viz.png
 INPUT ./all_feature_viz.png
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/ebgaramond/EBGaramond-Bold-osf-ot1.tfm
-INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
-INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT ./box_plots_before.png
 INPUT ./box_plots_before.png
 INPUT ./box_plots_before.png
@@ -464,6 +461,9 @@ INPUT ./corr_viz_after_fe.png
 INPUT ./corr_viz_after_fe.png
 INPUT ./corr_viz_after_fe.png
 INPUT ./corr_viz_after_fe.png
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT ./nrmlz_plots.png
 INPUT ./nrmlz_plots.png
 INPUT ./nrmlz_plots.png
@@ -639,5 +639,4 @@ INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
-INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb
 INPUT c:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb

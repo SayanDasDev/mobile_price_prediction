@@ -88,7 +88,7 @@ tabsize=2,
 
 	\textsc{\LARGE Machine Learning}\\[0.5cm]
 
-	\textsc{\large Final Project Report}\\[0.5cm]
+	\textsc{\large Project Report}\\[0.5cm]
 
 	\HRule\\[0.4cm]
 
@@ -232,21 +232,21 @@ The dataset comprises 20 features that describe various characteristics of smart
 		\toprule
 		\textbf{battery\_power} & battery capacity in mAh   & Numerical  \\
 		\midrule
-		\textbf{blue}           & has bluetooth or not  & Binary   \\
+		\textbf{blue}           & has bluetooth or not  & Categorical   \\
 		\midrule
 		\textbf{clock\_speed}   & speed at which processor executes instructions & Numerical \\
 		\midrule
-		\textbf{dual\_sim}      & has dual sim support or not & Binary \\
+		\textbf{dual\_sim}      & has dual sim support or not & Categorical \\
 		\midrule
 		\textbf{fc}             & front Camera Megapixels & Numerical \\
 		\midrule
 		\textbf{pc}             & primary Camera Megapixels & Numerical \\
 		\midrule
-		\textbf{four\_g}        & has 4G or not & Binary \\
+		\textbf{four\_g}        & has 4G or not & Categorical \\
 		\midrule
-		\textbf{three\_g}       & has 3G or not & Binary \\
+		\textbf{three\_g}       & has 3G or not & Categorical \\
 		\midrule
-		\textbf{wifi}           & has wifi or not & Binary \\
+		\textbf{wifi}           & has wifi or not & Categorical \\
 		\midrule
 		\textbf{int\_memory}    & internal Memory capacity & Numerical \\
 		\midrule
@@ -262,7 +262,7 @@ The dataset comprises 20 features that describe various characteristics of smart
 		\midrule
 		\textbf{ram}            & RAM in MB & Numerical \\
 		\midrule
-		\textbf{touch\_screen}  & has touch screen or not & Binary \\
+		\textbf{touch\_screen}  & has touch screen or not & Categorical \\
 		\midrule
 		\textbf{sc\_h}          & screen Height in cm & Numerical \\
 		\midrule
@@ -272,7 +272,7 @@ The dataset comprises 20 features that describe various characteristics of smart
 		\bottomrule
 	\end{tabular}
 \end{table}
-Among these features, some are binary variables (e.g., blue, dual\_sim, four\_g, three\_g touch\_screen, wifi), while others are continuous variables (e.g., battery\_power, clock\_speed, int\_memory, ram, talk\_time). These features collectively provide a comprehensive overview of the smartphone's technical specifications and capabilities.
+Among these features, some are Categorical variables (e.g., blue, dual\_sim, four\_g, three\_g touch\_screen, wifi), while others are numerical variables (e.g., battery\_power, clock\_speed, int\_memory, ram, talk\_time). These features collectively provide a comprehensive overview of the smartphone's technical specifications and capabilities.
 
 A histogram visualization of all individual features is given below:
 \begin{figure}[H]
@@ -297,9 +297,9 @@ The target variable, price\_range, represents the categorization of smartphones 
 \chapter{Data Preprocessing}
 \section{Data Cleaning}
 \subsection{Handling Missing Values}
-A check for missing values - \pythoninline{df.isnull().sum()} revealed no missing values in the dataset.
+A check for missing values revealed no missing values in the dataset.
 \subsection{Handling Duplicate Values}
-Also, the dataset was checked for duplicate entries - \pythoninline{df.duplicated().sum()}. No duplicate entries were found.
+Also, the dataset was checked for duplicate entries and none were found.
 \subsection{Handling Invalid Values}
 The dataset was checked for negative entries and none were found in the dataset.
 There are some features which can not be zero, like battery\_power, ram, etc. So, we checked for zero values in these features.
@@ -400,7 +400,7 @@ We preformed feature selection to identify the most relevant features for predic
 The \pythoninline{SelectKBest} method from \pythoninline{sklearn.feature_selection} is used with the scoring function \pythoninline{f_classif}, which applies the ANOVA F-test. \\
 Initially, \pythoninline{k='all'} is set to retain all features for evaluation, allowing for the computation of statistical metrics across all features. \\
 After fitting the model, the p-values and F-scores for each feature are extracted. These metrics help assess the significance and contribution of each feature to the target variable. \\
-Features with a p-value less than $0.05$ are considered statistically significant and are selected for further analysis. \\
+Features with a p-value less than $0.1$ are considered statistically significant and are selected for further analysis. \\
 The selected features are: \\
 \pythoninline{['battery_power', 'int_memory', 'mobile_wt', 'n_cores', 'ram', 'px_area', 'screen_area']} \\
 These are then used for model training and evaluation to determine their impact on prediction accuracy and model performance.
@@ -431,7 +431,7 @@ We will normalize these features using \pythoninline{PowerTransformer()}.
 
 \section{Train-Test Split}
 \label{sec:train_test_split}
-The dataset was split into training and testing sets to evaluate model performance. The training set was used to train the machine learning models, while the testing set was used to assess model accuracy and generalization. The split ratio was 80\% training and 20\% testing to ensure an adequate balance between model training and evaluation. We used sklearn's \pythoninline{train_test_split} function to perform the split.
+The dataset was split into training and testing sets to evaluate model performance. The training set was used to train the machine learning models, while the testing set was used to assess model accuracy and generalization. The split ratio was 80\% training and 20\% testing to ensure an adequate balance between model training and evaluation. We used sklearn's \pythoninline{train_test_split} function to perform the split. It resulted in $1584$ samples for training and $396$ samples for testing.
 \section{Scaling}
 The dataset was scaled using the \pythoninline{StandardScaler} from \pythoninline{sklearn.preprocessing} to normalize the feature values. Scaling ensures that all features contribute equally to the model training process and prevents any feature from dominating the others. The scaled dataset was used for model training and evaluation to improve prediction accuracy and model performance.
 
@@ -1058,7 +1058,7 @@ Comparing the matrices form Table \ref{tab:model_perf_mat} amd Table \ref{tab:tu
 
 The most import feature was \textbf{RAM}, followed by \textbf{Pixel Area} and \textbf{Battery Power}. These features had the most significant impact on the model's predictions, aligning with common consumer preferences for smartphones.
 
-We finally selected \textbf{Logistic Regression} as the best model due to its consistent high performance across all metrics, including accuracy, precision, recall, and F1-score. Also it being a simple model, takes less time to train.
+We finally selected \textbf{Logistic Regression} as the best model due to its consistent high performance across all metrics, including accuracy, precision, recall, and F1-score. Also it being a simple model, takes less time to train. \textbf{SVM} is a close contender, but its higher complexity and longer training time made them less favorable.
 
 \section{Anomalies and Unexpected Findings}
 The dataset we chose did not have any class imbalances but there may have been challenges related to it, which can affect model predictions, particularly in underrepresented categories. \\
