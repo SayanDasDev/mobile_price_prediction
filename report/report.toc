@@ -16,26 +16,27 @@
 \contentsline {section}{\numberline {IV.3}Class Imbalance Check}{14}{section.4.3}%
 \contentsline {section}{\numberline {IV.4}Correlation Analysis}{15}{section.4.4}%
 \contentsline {section}{\numberline {IV.5}Feature Engineering}{16}{section.4.5}%
-\contentsline {section}{\numberline {IV.6}Feature Selection}{16}{section.4.6}%
-\contentsline {section}{\numberline {IV.7}Train-Test Split}{17}{section.4.7}%
-\contentsline {section}{\numberline {IV.8}Data Transformation}{17}{section.4.8}%
-\contentsline {chapter}{\numberline {V}Methodology}{19}{chapter.5}%
-\contentsline {section}{\numberline {V.1}Algorithms Used}{19}{section.5.1}%
-\contentsline {section}{\numberline {V.2}Justification}{20}{section.5.2}%
-\contentsline {chapter}{\numberline {VI}Implementation}{22}{chapter.6}%
-\contentsline {section}{\numberline {VI.1}Tools and Libraries}{22}{section.6.1}%
-\contentsline {section}{\numberline {VI.2}Parameters}{23}{section.6.2}%
-\contentsline {section}{\numberline {VI.3}Training Process}{25}{section.6.3}%
-\contentsline {chapter}{\numberline {VII}Results}{27}{chapter.7}%
-\contentsline {section}{\numberline {VII.1}Plots}{27}{section.7.1}%
-\contentsline {section}{\numberline {VII.2}Evaluation Metrics}{29}{section.7.2}%
-\contentsline {section}{\numberline {VII.3}Comparison between different Models}{29}{section.7.3}%
-\contentsline {chapter}{\numberline {VIII}Discussion}{31}{chapter.8}%
-\contentsline {section}{\numberline {VIII.1}Analysis of Results}{31}{section.8.1}%
-\contentsline {section}{\numberline {VIII.2}Anomalies and Unexpected Findings}{31}{section.8.2}%
-\contentsline {section}{\numberline {VIII.3}Limitations}{31}{section.8.3}%
-\contentsline {chapter}{\numberline {IX}Conclusion}{32}{chapter.9}%
-\contentsline {section}{\numberline {IX.1}Key Takeaways}{32}{section.9.1}%
-\contentsline {section}{\numberline {IX.2}Reflection on Objectives}{33}{section.9.2}%
-\contentsline {section}{\numberline {IX.3}Future Work}{33}{section.9.3}%
-\contentsline {chapter}{References}{36}{Item.62}%
+\contentsline {section}{\numberline {IV.6}Feature Selection}{17}{section.4.6}%
+\contentsline {section}{\numberline {IV.7}Normalizing features}{18}{section.4.7}%
+\contentsline {section}{\numberline {IV.8}Train-Test Split}{19}{section.4.8}%
+\contentsline {section}{\numberline {IV.9}Scaling}{19}{section.4.9}%
+\contentsline {chapter}{\numberline {V}Methodology}{20}{chapter.5}%
+\contentsline {section}{\numberline {V.1}Algorithms Used}{20}{section.5.1}%
+\contentsline {section}{\numberline {V.2}Justification}{21}{section.5.2}%
+\contentsline {chapter}{\numberline {VI}Implementation}{23}{chapter.6}%
+\contentsline {section}{\numberline {VI.1}Tools and Libraries}{23}{section.6.1}%
+\contentsline {section}{\numberline {VI.2}Parameters}{24}{section.6.2}%
+\contentsline {section}{\numberline {VI.3}Training Process}{26}{section.6.3}%
+\contentsline {chapter}{\numberline {VII}Results}{28}{chapter.7}%
+\contentsline {section}{\numberline {VII.1}Plots}{28}{section.7.1}%
+\contentsline {section}{\numberline {VII.2}Evaluation Metrics}{30}{section.7.2}%
+\contentsline {section}{\numberline {VII.3}Comparison between different Models}{30}{section.7.3}%
+\contentsline {chapter}{\numberline {VIII}Discussion}{32}{chapter.8}%
+\contentsline {section}{\numberline {VIII.1}Analysis of Results}{32}{section.8.1}%
+\contentsline {section}{\numberline {VIII.2}Anomalies and Unexpected Findings}{32}{section.8.2}%
+\contentsline {section}{\numberline {VIII.3}Limitations}{32}{section.8.3}%
+\contentsline {chapter}{\numberline {IX}Conclusion}{33}{chapter.9}%
+\contentsline {section}{\numberline {IX.1}Key Takeaways}{33}{section.9.1}%
+\contentsline {section}{\numberline {IX.2}Reflection on Objectives}{34}{section.9.2}%
+\contentsline {section}{\numberline {IX.3}Future Work}{34}{section.9.3}%
+\contentsline {chapter}{References}{37}{Item.58}%

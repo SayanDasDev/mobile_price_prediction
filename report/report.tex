@@ -1,6 +1,6 @@
 \documentclass[12pt]{report}
 \usepackage[top=1in, bottom=1in, left=0.5in, right=0.5in]{geometry}
-\usepackage{amsmath, amsfonts, amssymb, ebgaramond-maths, enumerate, fancyhdr, xcolor, lipsum, titling, minted, algorithm, algpseudocode, algorithmicx, float, hyperref, booktabs, graphicx}
+\usepackage{amsmath, amsfonts, amssymb, ebgaramond-maths, enumerate, fancyhdr, xcolor, lipsum, titling, minted, algorithm, algpseudocode, algorithmicx, float, hyperref, booktabs, graphicx, array}
 \usepackage[utf8]{inputenc}
 
 \usepackage[Glenn]{fncychap}
@@ -371,12 +371,18 @@ Next, based on correlation analysis, the following redundant features were remov
 	\item Front and primary cameras are correlated, as primary cameras often accompany front cameras. The pc feature was retained, and fc was removed.
 \end{itemize}
 
-The correalation matrix after feature engineering is as follows:
+The correlation matrix after feature engineering is as follows:
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=35em]{corr_viz_after_fe.png}
+	\caption{Correlation heatmap of features.}
+	\label{corr_viz_after_feature_engineering}
+\end{figure}
 
 \section{Feature Selection}
 We preformed feature selection to identify the most relevant features for predicting smartphone prices. This step involved analyzing feature importance scores from machine learning models, conducting correlation analysis, and using domain knowledge to select the most influential features. Feature selection is aimed to reduce model complexity and improve prediction accuracy.
 
-\noindent In our project, we used the ANOVA F-test (Analysis of Variance) method to evaluate each feature's relationship with the target variable, price\_range, and select features that are statistically significant. The threshold for selection is a p-value of less than $0.05$, indicating $95\%$ confidence. \\
+\noindent In our project, we used the ANOVA F-test (Analysis of Variance) method to evaluate each feature's relationship with the target variable, price\_range, and select features that are statistically significant. The threshold for selection is a p-value of less than $0.1$, indicating a $90\%$ confidence level. \\
 The \pythoninline{SelectKBest} method from \pythoninline{sklearn.feature_selection} is used with the scoring function \pythoninline{f_classif}, which applies the ANOVA F-test. \\
 Initially, \pythoninline{k='all'} is set to retain all features for evaluation, allowing for the computation of statistical metrics across all features. \\
 After fitting the model, the p-values and F-scores for each feature are extracted. These metrics help assess the significance and contribution of each feature to the target variable. \\
@@ -385,25 +391,34 @@ The selected features are \pythoninline{['battery_power', 'int_memory', 'mobile_
 These are then used for model training and evaluation to determine their impact on prediction accuracy and model performance.
 
 
+\section{Normalizing features}
+A historam plot of the features after feature selection was done as follows:
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=25em]{nrmlz_plots.png}
+	\caption{Histogram visualization of all features after feature selection}
+	\label{all_feature_viz_after_feature_selection}
+\end{figure}
+\noindent As we can see the px\_area and screen area can be normalized. \\
+We will normalize these features using \pythoninline{PowerTransformer()}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=10em]{nrmlz_px_ba.png}
+	\caption{Histogram visualization of px\_area before and after normalization}
+	\label{hist_viz_px_area_norm}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=10em]{nrmlz_screen_ba.png}
+	\caption{Histogram visualization of screen\_area before and after normalization}
+	\label{hist_viz_screen_area_norm}
+\end{figure}
+
 \section{Train-Test Split}
 \label{sec:train_test_split}
 The dataset was split into training and testing sets to evaluate model performance. The training set was used to train the machine learning models, while the testing set was used to assess model accuracy and generalization. The split ratio was 80\% training and 20\% testing to ensure an adequate balance between model training and evaluation. We used sklearn's \pythoninline{train_test_split} function to perform the split.
-\section{Data Transformation}
-Data transformation involved feature scaling to normalize the data and improve model performance. This step ensured that all features were in a suitable format for machine learning model training. We used a pipeline to apply transformations consistently across training and test sets:
-\begin{python}
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler, PowerTransformer
-
-pipeline = Pipeline([
-    ('normalizer', PowerTransformer()),
-    ('scaler', StandardScaler())
-])
-
-pipeline.fit(X_train)
-
-X_train_scaled = pipeline.transform(X_train)
-X_test_scaled = pipeline.transform(X_test)
-\end{python}
+\section{Scaling}
+The dataset was scaled using the \pythoninline{StandardScaler} from \pythoninline{sklearn.preprocessing} to normalize the feature values. Scaling ensures that all features contribute equally to the model training process and prevents any feature from dominating the others. The scaled dataset was used for model training and evaluation to improve prediction accuracy and model performance.
 
 \chapter{Methodology}
 \section{Algorithms Used}
@@ -411,18 +426,14 @@ For this project, we experimented with several machine learning algorithms to pr
 \vspace{-1.25em}
 \begin{enumerate}
 	\setlength\itemsep{-1.05em}
-
-\item{\textbf{Logistic Regression: }}Logistic Regression allows us to predict the probability of the dependent variable from a given set of independent variables. The probability values are between 0 and 1. \cite{hadsonml}
-\item{\textbf{Support Vector Machine: }}In Support Vector Machine, the data is separated into two classes and placed on a plane known as the marginal plane. Points from two classes that are adjacent to the line are called support vectors. The goal of Support Vector Machine is to choose the marginal plane with the greatest separation between two data points. This classifier is called a linear support vector machine if the training data can be separated linearly, albeit coarsely. If the data are not linearly separated, it is preferable to use kernel methods and soft range maximization to obtain nonlinear support vector machines. \cite{hadsonml}
-\item{\textbf{Decision Tree: }}There are decision and leaf nodes according to the goal and independent variables in the decision tree algorithm. Because it is a categorization technique that produces a tree-like structure, it is known as a decision tree. The data set entries are processed into a tree to be used for classification, after which the classification procedure is carried out. Algorithms can follow different paths in the selection of root, node and branching criteria. \cite{hadsonml}
-\item{\textbf{Random Forest: }}
-Random Forest is a machine learning algorithm that creates a large number of decision trees and combines their predictions. It is a type of ensemble learning method that can be used for classification and regression. Random Forest is a versatile algorithm that can be used for a variety of tasks, including classification, regression, and feature selection. \cite{hadsonml}
-\item{\textbf{K-Nearest Neighbors: }}
-K-Nearest Neighbors is a well-known classification technique that bases predictions on finding the closest neighbors in classes that share a lot of characteristics. Since the dataset is scanned one by one to find the nearest neighbors, the performance of the algorithm decreases. It is also known as the lazy learning method. It works slowly in large volumes of data. \cite{hadsonml}
-\item{\textbf{XGBoost: }}
-XGBoost is a scalable and accurate implementation of gradient boosting machines. It is an efficient and effective algorithm that can be used for regression, classification, ranking, and user-defined prediction problems. XGBoost is known for its speed and performance, making it a popular choice for machine learning tasks. \cite{hadsonml}
-\item{\textbf{Voting Classifier: }}
-Voting Classifier is an ensemble learning method that combines multiple machine learning models to improve prediction accuracy. It aggregates the predictions of individual models and selects the class label with the most votes. Voting Classifier can be used for both classification and regression tasks. \cite{hadsonml}
+	
+	\item{\textbf{Logistic Regression: }}Logistic Regression allows us to predict the probability of the dependent variable from a given set of independent variables. The probability values are between 0 and 1. \cite{hadsonml}
+	\item{\textbf{K-Nearest Neighbors: }}
+	K-Nearest Neighbors is a well-known classification technique that bases predictions on finding the closest neighbors in classes that share a lot of characteristics. Since the dataset is scanned one by one to find the nearest neighbors, the performance of the algorithm decreases. It is also known as the lazy learning method. It works slowly in large volumes of data. \cite{hadsonml}
+	\item{\textbf{Random Forest: }}Random Forest is a machine learning algorithm that creates a large number of decision trees and combines their predictions. It is a type of ensemble learning method that can be used for classification and regression. Random Forest is a versatile algorithm that can be used for a variety of tasks, including classification, regression, and feature selection. \cite{hadsonml}
+	\item{\textbf{Decision Tree: }}There are decision and leaf nodes according to the goal and independent variables in the decision tree algorithm. Because it is a categorization technique that produces a tree-like structure, it is known as a decision tree. The data set entries are processed into a tree to be used for classification, after which the classification procedure is carried out. Algorithms can follow different paths in the selection of root, node and branching criteria. \cite{hadsonml}
+	\item{\textbf{Support Vector Machine: }}In Support Vector Machine, the data is separated into two classes and placed on a plane known as the marginal plane. Points from two classes that are adjacent to the line are called support vectors. The goal of Support Vector Machine is to choose the marginal plane with the greatest separation between two data points. This classifier is called a linear support vector machine if the training data can be separated linearly, albeit coarsely. If the data are not linearly separated, it is preferable to use kernel methods and soft range maximization to obtain nonlinear support vector machines. \cite{hadsonml}
+	\item{\textbf{XGBoost: }}XGBoost is a scalable and accurate implementation of gradient boosting machines. It is an efficient and effective algorithm that can be used for regression, classification, ranking, and user-defined prediction problems. XGBoost is known for its speed and performance, making it a popular choice for machine learning tasks. \cite{hadsonml}
 \end{enumerate}
 
 \section{Justification}
@@ -430,15 +441,12 @@ The selection of these algorithms was based on their suitability for classificat
 \vspace{-1.25em}
 \begin{enumerate}
 	\setlength\itemsep{-1.05em}
-\item{\textbf{Logistic Regression: }}Logistic Regression serves as a great starting point for classification tasks. For predicting price ranges, it can handle categorical output well and provides insights into which features (e.g., RAM or battery power) contribute most to the classification. This helps establish a baseline performance for comparison with other models.
-\item{\textbf{Support Vector Machine: }}SVM can capture complex relationships between features using kernel tricks, making it suitable for handling overlapping data distributions. Given the challenge of imbalanced class distributions, SVM with proper class weighting can improve prediction accuracy.
-\item{\textbf{Decision Tree: }}Decision Trees provide an interpretable model for understanding hierarchical decision-making based on features. For this project, it illustrates how smartphone features interact to influence price categories, aiding feature selection and refinement.
-\item{\textbf{Random Forest: }}Random Forest excels in handling mixed data types (e.g., numerical and categorical) and mitigating overfitting. In this project, its feature importance analysis can identify critical smartphone features influencing price ranges, such as internal storage or RAM.
-
-\item{\textbf{K-Nearest Neighbors: }}KNN is effective in scenarios where decision boundaries are non-linear, as is often the case with diverse smartphone features like camera quality and battery power. For this project, it helps to explore the relationship between clusters of data points and their price ranges.
-
-\item{\textbf{XGBoost: }}XGBoost’s advanced boosting mechanism is ideal for capturing intricate patterns in the data. For this project, it addresses imbalanced classes effectively through weight adjustment, delivering state-of-the-art performance on complex datasets.
-\item{\textbf{Voting Classifier: }}The Voting Classifier combines the strengths of multiple models, reducing individual model weaknesses. For this project, it integrates the insights of Logistic Regression, and Random Forest, leading to a more balanced and accurate price classification system.
+	\item{\textbf{Logistic Regression: }}Logistic Regression serves as a great starting point for classification tasks. For predicting price ranges, it can handle categorical output well and provides insights into which features (e.g., RAM or battery power) contribute most to the classification. This helps establish a baseline performance for comparison with other models.
+	\item{\textbf{K-Nearest Neighbors: }}KNN is effective in scenarios where decision boundaries are non-linear, as is often the case with diverse smartphone features like camera quality and battery power. For this project, it helps to explore the relationship between clusters of data points and their price ranges.
+	\item{\textbf{Random Forest: }}Random Forest excels in handling mixed data types (e.g., numerical and categorical) and mitigating overfitting. In this project, its feature importance analysis can identify critical smartphone features influencing price ranges, such as internal storage or RAM.
+	\item{\textbf{Decision Tree: }}Decision Trees provide an interpretable model for understanding hierarchical decision-making based on features. For this project, it illustrates how smartphone features interact to influence price categories, aiding feature selection and refinement.
+	\item{\textbf{Support Vector Machine: }}SVM can capture complex relationships between features using kernel tricks, making it suitable for handling overlapping data distributions. Given the challenge of imbalanced class distributions, SVM with proper class weighting can improve prediction accuracy.
+	\item{\textbf{XGBoost: }}XGBoost’s advanced boosting mechanism is ideal for capturing intricate patterns in the data. For this project, it addresses imbalanced classes effectively through weight adjustment, delivering state-of-the-art performance on complex datasets.
 \end{enumerate}
 
 \chapter{Implementation}
@@ -446,30 +454,37 @@ The selection of these algorithms was based on their suitability for classificat
 The tools and libraries used for this project are:
 \vspace{-1.25em}
 \begin{enumerate}
-	\setlength\itemsep{-1.05em}
-	\item{\textbf{Python:}} The primary programming language for this project.
-	\item{\textbf{Jupyter Notebook:}} For interactive code development.
-	\item{\textbf{Data Handling Libraries:}}
-		\vspace{-1.5em}
-		\begin{enumerate}
-			\setlength\itemsep{-1.5em}
-			\item{\textbf{Pandas:}} For data manipulation, cleaning, and handling structured datasets.
-			\item{\textbf{Numpy:}} For numerical operations, array manipulations, and faster mathematical computations.
-		\end{enumerate}
-	\item{\textbf{Vizualization Libraries: }}
-		\vspace{-1.5em}
-		\begin{enumerate}
-			\setlength\itemsep{-1.5em}
-			\item{\textbf{Matplotlib:}} For creating static visualizations like bar charts and line graphs etc.
-			\item{\textbf{Seaborn:}} For advanced visualizations, particularly heatmaps and confusion matices.
-		\end{enumerate}
-	\item{\textbf{Machine Learning Libraries: }}
-		\vspace{-1.5em}
-		\begin{enumerate}
-			\setlength\itemsep{-1.5em}
-			\item{\textbf{Scikit-learn:}} For building, training, and evaluating machine learning models (Logistic Regression, KNN, Random Forest, Decision Tree, Voting Classifier and SVM). It has also been used for data preprocessing, data splitting and feature selection.
-			\item{\textbf{XGBoost:}} For advanced visualizations, particularly heatmaps and confusion matices.
-		\end{enumerate}
+    \setlength\itemsep{-1.05em}
+    \item{\textbf{Python:}} The primary programming language for this project.
+    \item{\textbf{Jupyter Notebook:}} For interactive code development.
+    \item{\textbf{Data Handling Libraries:}}
+        \vspace{-1.5em}
+        \begin{enumerate}
+            \setlength\itemsep{-1.5em}
+            \item{\textbf{Pandas:}} For data manipulation, cleaning, and handling structured datasets.
+            \item{\textbf{Numpy:}} For numerical operations, array manipulations, and faster mathematical computations.
+        \end{enumerate}
+    \item{\textbf{Visualization Libraries: }}
+        \vspace{-1.5em}
+        \begin{enumerate}
+            \setlength\itemsep{-1.5em}
+            \item{\textbf{Matplotlib:}} For creating static visualizations like bar charts and line graphs etc.
+            \item{\textbf{Seaborn:}} For advanced visualizations, particularly heatmaps and confusion matrices.
+        \end{enumerate}
+    \item{\textbf{Machine Learning Libraries: }}
+        \vspace{-1.5em}
+        \begin{enumerate}
+            \setlength\itemsep{-1.5em}
+            \item{\textbf{Scikit-learn:}} For building, training, and evaluating machine learning models (Logistic Regression, KNN, Random Forest, Decision Tree, Voting Classifier, and SVM). It has also been used for data preprocessing, data splitting, and feature selection.
+            \item{\textbf{XGBoost:}} For building and training gradient boosting models.
+        \end{enumerate}
+    \item{\textbf{Other Libraries: }}
+        \vspace{-1.5em}
+        \begin{enumerate}
+            \setlength\itemsep{-1.5em}
+            \item{\textbf{TQDM:}} For showing progress bars during loops.
+            \item{\textbf{Time:}} For tracking the time taken by different parts of the code.
+        \end{enumerate}
 \end{enumerate}
 
 \section{Parameters}
@@ -481,89 +496,102 @@ At first, the models were initialized with default parameters from their respect
 	\item{\textbf{SVM:}} \pythoninline{probability=True} was used to enable probabilistic predictions for compatibility with ensemble models.
 	\item{\textbf{XGBoost:}} Used \pythoninline{eval_metric='mlogloss'} as the evaluation metric.
 \end{enumerate}
-The initial configurations resulted in good training accuracy but some inconsistencies in test performance, highlighting potential underfitting or overfitting for specific models:
-\vspace{-1.5em}
-\begin{enumerate}
-	\setlength\itemsep{-1.5em}
-	\item{\textbf{Logistic Regression:}} High test accuracy ($\sim 95\%$), indicating good generalization.
-	\item{\textbf{KNN:}} Moderate performance on the test set ($\sim 76\%$), likely due to its sensitivity to the choice of n\_neighbors.
-	\item{\textbf{Random Forest and Decision Tree:}} Overfitting on the training set ($ 100\%$ accuracy) but reduced generalization ($\sim 91\%$ and $\sim 83\%$ test accuracy, respectively).
-	\item{\textbf{XGBoost and SVM:}} Consistently high performance.
-\end{enumerate}
-Later using GridSearchCV, each model's hyperparameters were tuned to find optimal configurations. Here are the hyperparameters that were tuned for each model:
-\begin{python}
-param_grids = {
-	'Logistic Regression': {
-			'C': [0.1, 1, 10],
-			'solver': ['liblinear', 'saga']
-	},
-	'KNN': {
-			'n_neighbors': [3, 5, 7],
-			'weights': ['uniform', 'distance']
-	},
-	'Random Forest': {
-			'n_estimators': [50, 100, 200],
-			'max_depth': [None, 10, 20],
-			'min_samples_split': [2, 5, 10]
-	},
-	'Decision Tree': {
-			'max_depth': [None, 10, 20],
-			'min_samples_split': [2, 5, 10]
-	},
-	'SVM': {
-			'C': [0.1, 1, 10],
-			'kernel': ['linear', 'rbf'],
-			'probability': [True]
-	},
-	'XGBoost': {
-			'learning_rate': [0.01, 0.1, 0.2],
-			'n_estimators': [50, 100],
-			'max_depth': [3, 6]
-	},
-	'Voting Classifier': {
-			'voting': ['hard', 'soft']
-	}
-}
-\end{python}
-Here are the best parameters obtained:
+The initial configurations resulted in good training accuracy but some inconsistencies in test performance.
 \begin{table}[H]
-	\centering
-	\begin{tabular}{ll}
-	\toprule
-	\textbf{Model} & \textbf{Best Parameters} \\
-	\toprule
-	Logistic Regression & \{'C': 10, 'solver': 'saga'\} \\
-	\midrule
-	KNN & \{'n\_neighbors': 7, 'weights': 'distance'\} \\
-	\midrule
-	Random Forest & \{'max\_depth': 10, 'min\_samples\_split': 2, 'n\_estimators': 100\} \\
-	\midrule
-	Decision Tree & \{'max\_depth': 10, 'min\_samples\_split': 2\} \\
-	\midrule
-	SVM & \{'C': 10, 'kernel': 'linear', 'probability': True\} \\
-	\midrule
-	XGBoost & \{'learning\_rate': 0.1, 'max\_depth': 6, 'n\_estimators': 100\} \\
-	\midrule
-	Voting Classifier & \{'voting': 'soft'\} \\
-	\bottomrule
-	\end{tabular}
-	\caption{Results for Hyperparameter Tuning and Cross-Validation}
-	\label{table:hyperparameter_tuning}
-	\end{table}
-\vspace{-1.5em}
-\noindent Training the models with these optimal hyperparameters resulted in the following:
+    \centering
+		\begin{tabular}{p{2.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1cm}p{1cm}}
+    \toprule
+    \textbf{Model} & \textbf{Accuracy Train} & \textbf{Accuracy Test} & \textbf{Precision Train} & \textbf{Precision Test} & \textbf{Recall Train} & \textbf{Recall Test} & \textbf{F1-Score Train} & \textbf{F1-Score Test}\\
+    \toprule
+    Logistic Regression & $0.9463$ & $0.9444$ & $0.9465$ & $0.9445$ & $0.9463$ & $0.9444$ & $0.9464$ & $0.9443$ \\
+    \midrule
+    KNN & $0.8580$ & $0.7222$ & $0.8608$ & $0.7401$ & $0.8580$ & $0.7222$ & $0.8588$ & $0.7279$ \\
+    \midrule
+    Random Forest & $1.0000$ & $0.8889$ & $1.0000$ & $0.8886$ & $1.0000$ & $0.8889$ & $1.0000$ & $0.8885$ \\
+    \midrule
+    Decision Tree & $1.0000$ & $0.8712$ & $1.0000$ & $0.8722$ & $1.0000$ & $0.8712$ & $1.0000$ & $0.8715$ \\
+    \midrule
+    SVM & $0.9545$ & $0.9066$ & $0.9549$ & $0.9084$ & $0.9545$ & $0.9066$ & $0.9546$ & $0.9070$ \\
+    \midrule
+    XGBoost & $1.0000$ & $0.9167$ & $1.0000$ & $0.9168$ & $1.0000$ & $0.9167$ & $1.0000$ & $0.9164$ \\
+    \toprule
+    \end{tabular}
+    \caption{Model Performance Metrics}
+		\label{tab:model_perf_mat}
+\end{table}
 \vspace{-1.5em}
 \begin{enumerate}
-	\setlength\itemsep{-1.5em}
-	\item{\textbf{Logistic Regression:}} Improved test performance with consistent metrics.
-	\item{\textbf{KNN:}} Boosted test accuracy from $\sim 76\%$ to $\sim 79.75\%$, with improved precision and recall.
-	\item{\textbf{Random Forest :}} Balanced training and test metrics, reducing overfitting.
-	\item{\textbf{XGBoost and SVM:}} Improved test accuracy ($\sim 86.75\%$), addressing overfitting.
-	\item{\textbf{SVM:}} Consistent performance with $\sim 93.75\%$ test accuracy.
-	\item{\textbf{XGBoost:}} Maintained high test accuracy ($\sim 90.75\%$) with efficient learning.
-	\item{\textbf{Voting Classifier:}} Improved ensemble performance with a test accuracy of $\sim 93.5\%$.
-
+    \setlength\itemsep{-1.5em}
+    \item{\textbf{Logistic Regression:}} High test accuracy ($\sim 94.44\%$), indicating good generalization.
+    \item{\textbf{KNN:}} Moderate performance on the test set ($\sim 72.22\%$), likely due to its sensitivity to the choice of n\_neighbors.
+    \item{\textbf{Random Forest:}} Overfitting on the training set ($100\%$ accuracy) but reduced generalization ($\sim 87.88\%$ test accuracy).
+    \item{\textbf{Decision Tree:}} Overfitting on the training set ($100\%$ accuracy) but reduced generalization ($\sim 86.11\%$ test accuracy).
+    \item{\textbf{SVM:}} Consistently high performance with test accuracy ($\sim 90.66\%$).
+    \item{\textbf{XGBoost:}} Consistently high performance with test accuracy ($\sim 91.67\%$).
 \end{enumerate}
+As we can see there are overfitting issues with some models. We will use \pythoninline{GridSearchCV} to tune the hyperparameters to get better performance.
+
+\noindent The best configuration we got from hyperparameter tuning is as follows:
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{3cm}p{8cm}p{1.5cm}}
+    \toprule
+    \textbf{Model} & \textbf{Best Parameters} & \textbf{Best Score} \\
+    \toprule
+    Logistic Regression & \{'classifier\_\_C': 10, 'classifier\_\_max\_iter': ...\} & $0.9369$ \\
+    \midrule
+    KNN & \{'classifier\_\_n\_neighbors': 7, 'classifier\_\_p': ...\} & $0.7740$ \\
+    \midrule
+    Random Forest & \{'classifier\_\_max\_depth': None, 'classifier\_\_m': ...\} & $0.8946$ \\
+    \midrule
+    Decision Tree & \{'classifier\_\_criterion': 'gini', 'classifier\_\_': ...\} & $0.8567$ \\
+    \midrule
+    SVM & \{'classifier\_\_C': 10, 'classifier\_\_gamma': 'sc': ...\} & $0.9350$ \\
+    \midrule
+    XGBoost & \{'classifier\_\_learning\_rate': 0.1, 'classifier\_\_': ...\} & $0.8977$ \\
+    \toprule
+    \end{tabular}
+    \caption{Best Parameters and Scores for each Model}
+		\label{tab:best_params_scores}
+\end{table}
+The best score represents the highest cross-validation score achieved by each model during hyperparameter tuning. This score is typically the mean accuracy (or another evaluation metric) obtained from cross-validation, indicating how well the model is expected to perform on unseen data with the best-found hyperparameters. \\
+Using the configuration in Table \ref{tab:best_params_scores} we retrained the models and got the following performance metrics:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{p{2.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1.5cm}p{1cm}p{1cm}}
+    \toprule
+    \textbf{Model} & \textbf{Accuracy Train} & \textbf{Precision Train} & \textbf{Recall Train} & \textbf{F1-Score Train} & \textbf{Accuracy Test} & \textbf{Precision Test} & \textbf{Recall Test} & \textbf{F1-Score Test} \\
+    \toprule
+    Logistic Regression & $0.9457$ & $0.9458$ & $0.9457$ & $0.9457$ & $0.9495$ & $0.9492$ & $0.9495$ & $0.9493$ \\
+    \midrule
+    KNN & $0.8592$ & $0.8615$ & $0.8592$ & $0.8596$ & $0.7626$ & $0.7790$ & $0.7626$ & $0.7670$ \\
+    \midrule
+    Random Forest & $1.0000$ & $1.0000$ & $1.0000$ & $1.0000$ & $0.8889$ & $0.8906$ & $0.8889$ & $0.8889$ \\
+    \midrule
+    Decision Tree & $0.9968$ & $0.9968$ & $0.9968$ & $0.9968$ & $0.8712$ & $0.8718$ & $0.8712$ & $0.8710$ \\
+    \midrule
+    SVM & $0.9476$ & $0.9477$ & $0.9476$ & $0.9476$ & $0.9520$ & $0.9518$ & $0.9520$ & $0.9518$ \\
+    \midrule
+    XGBoost & $0.9962$ & $0.9962$ & $0.9962$ & $0.9962$ & $0.9192$ & $0.9196$ & $0.9192$ & $0.9190$ \\
+    \toprule
+    \end{tabular}
+    \caption{Model Performance Metrics after Hyperparameter Tuning}
+		\label{tab:tuned_per_mat}
+\end{table}
+
+Comparing the matrices form Table \ref{tab:model_perf_mat} amd Table \ref{tab:tuned_per_mat} we can infer:
+
+\vspace{-1.5em}
+\begin{itemize}
+	\setlength\itemsep{-1.5em}
+	\item \textbf{Logistic Regression:} The performance metrics remained consistent after hyperparameter tuning, indicating that the model was already well-optimized.
+	\item \textbf{KNN:} There was a significant improvement in test accuracy from $0.7222$ to $0.7790$, as well as improvements in precision, recall, and F1-score, suggesting that hyperparameter tuning effectively addressed underfitting.
+	\item \textbf{Random Forest:} The test accuracy slightly decreased from $0.8889$ to $0.8906$, but the model maintained high performance, indicating that hyperparameter tuning helped in balancing the training and test metrics.
+	\item \textbf{Decision Tree:} The performance metrics remained relatively stable, with a slight improvement in test precision and recall, indicating that hyperparameter tuning helped in reducing overfitting.
+	\item \textbf{SVM:} The test accuracy improved from $0.9066$ to $0.9518$, along with improvements in precision, recall, and F1-score, suggesting that hyperparameter tuning significantly enhanced the model's performance.
+	\item \textbf{XGBoost:} The test accuracy improved from $0.9167$ to $0.9196$, with consistent improvements in other metrics, indicating that hyperparameter tuning helped in maintaining high performance and efficient learning.
+\end{itemize}
 
 \section{Training Process}
 As discussed in Section \ref{sec:train_test_split}, the dataset was split into training and testing sets. \\

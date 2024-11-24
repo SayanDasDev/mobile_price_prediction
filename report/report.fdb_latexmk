@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1732424807.16259 "d:/Projects/smartphone_price_prediction/report/report.tex" "report.pdf" "report" 1732424810.47349 0
+["pdflatex"] 1732451758.53735 "d:/Projects/smartphone_price_prediction/report/report.tex" "report.pdf" "report" 1732451762.44916 0
   "all_feature_viz.png" 1732423391 323504 1d1771aa56cc7f3f4ba4facd1700d49b ""
   "box_plots_after.png" 1732257147 141388 d47aacf04b6b1a81847844c6b3c191b3 ""
   "box_plots_before.png" 1732257131 143447 d4687cab9f9863a28d9670e5204c0c0d ""
@@ -215,6 +215,7 @@
   "c:/texlive/2024/texmf-dist/tex/latex/setspace/setspace.sty" 1722702089 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "c:/texlive/2024/texmf-dist/tex/latex/titling/titling.sty" 1722702686 7358 95ac619994bd30d405a74f3eca431c84 ""
   "c:/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty" 1722702754 4085 a8942f4e9896fdaec6c24cdd7b28fa66 ""
+  "c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty" 1722702754 14067 1383bd6ee23ab18ae0e796155404deb7 ""
   "c:/texlive/2024/texmf-dist/tex/latex/tools/enumerate.sty" 1722702754 3468 ad69b54642e68f9fdf39ec1a16dd7341 ""
   "c:/texlive/2024/texmf-dist/tex/latex/tools/shellesc.sty" 1722702754 4121 6039ae6d0916154d7ba5f20a77b9ab2c ""
   "c:/texlive/2024/texmf-dist/tex/latex/txfonts/t1txtt.fd" 1722702831 1324 7b6c95370a64cd8c7620cbefefb53dba ""
@@ -234,12 +235,16 @@
   "cmat_VC.png" 1732293986 21648 893e811e8670a3b435a3a763115f7947 ""
   "cmat_XG.png" 1732293968 20449 6445583ebd67cd3dcefacb1af49a5470 ""
   "corr_viz.png" 1732257996 236768 b50f25733642404bf9ade1713d34371b ""
-  "d:/Projects/smartphone_price_prediction/report/report.tex" 1732424802 55487 cdaf2c2d1d15170a6178bd8b6c215bee ""
+  "corr_viz_after_fe.png" 1732424076 209789 213fab57393fc16a524367d9385aa301 ""
+  "d:/Projects/smartphone_price_prediction/report/report.tex" 1732451753 59267 74645ca012adb830878fe8b4e6b602e2 ""
   "imbalance_check.png" 1732258835 9889 98c2fc0e627240c4383daa87b38a9223 ""
-  "report.aux" 1732424810 9710 42a1b0be885b5fd969160cf31c44a79a "pdflatex"
-  "report.out" 1732424810 5468 8cd8d0a974862e756adb00b629f3ac96 "pdflatex"
-  "report.tex" 1732424802 55487 cdaf2c2d1d15170a6178bd8b6c215bee ""
-  "report.toc" 1732424810 3156 8ca654526a45df4753661cd29c33564b "pdflatex"
+  "nrmlz_plots.png" 1732441701 96903 e09ad9348f87d440a14b76d57c4fbfde ""
+  "nrmlz_px_ba.png" 1732442169 61309 56f75c1da11188a102e11d97d40c6a16 ""
+  "nrmlz_screen_ba.png" 1732442160 59390 b1e205a1338077e3032d36d6ede07c58 ""
+  "report.aux" 1732451762 11477 dc8f031ffb34977ee246ee13cb92524e "pdflatex"
+  "report.out" 1732451762 5563 6099523709abe8e65a77ed225bc28d58 "pdflatex"
+  "report.tex" 1732451753 59267 74645ca012adb830878fe8b4e6b602e2 ""
+  "report.toc" 1732451762 3226 384b0ac26fce68f23b2969c0a8d95fa9 "pdflatex"
   (generated)
   "report.aux"
   "report.log"
