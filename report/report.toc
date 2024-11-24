@@ -29,14 +29,14 @@
 \contentsline {section}{\numberline {VI.3}Training Process}{25}{section.6.3}%
 \contentsline {chapter}{\numberline {VII}Results}{26}{chapter.7}%
 \contentsline {section}{\numberline {VII.1}Plots}{26}{section.7.1}%
-\contentsline {section}{\numberline {VII.2}Evaluation Metrics}{29}{section.7.2}%
-\contentsline {section}{\numberline {VII.3}Comparison between different Models}{30}{section.7.3}%
-\contentsline {chapter}{\numberline {VIII}Discussion}{32}{chapter.8}%
-\contentsline {section}{\numberline {VIII.1}Analysis of Results}{32}{section.8.1}%
-\contentsline {section}{\numberline {VIII.2}Anomalies and Unexpected Findings}{32}{section.8.2}%
-\contentsline {section}{\numberline {VIII.3}Limitations}{32}{section.8.3}%
-\contentsline {chapter}{\numberline {IX}Conclusion}{33}{chapter.9}%
-\contentsline {section}{\numberline {IX.1}Key Takeaways}{33}{section.9.1}%
-\contentsline {section}{\numberline {IX.2}Reflection on Objectives}{34}{section.9.2}%
-\contentsline {section}{\numberline {IX.3}Future Work}{34}{section.9.3}%
-\contentsline {chapter}{References}{37}{Item.58}%
+\contentsline {section}{\numberline {VII.2}Evaluation Metrics}{32}{section.7.2}%
+\contentsline {section}{\numberline {VII.3}Comparison between different Models}{34}{section.7.3}%
+\contentsline {chapter}{\numberline {VIII}Discussion}{36}{chapter.8}%
+\contentsline {section}{\numberline {VIII.1}Analysis of Results}{36}{section.8.1}%
+\contentsline {section}{\numberline {VIII.2}Anomalies and Unexpected Findings}{36}{section.8.2}%
+\contentsline {section}{\numberline {VIII.3}Limitations}{36}{section.8.3}%
+\contentsline {chapter}{\numberline {IX}Conclusion}{37}{chapter.9}%
+\contentsline {section}{\numberline {IX.1}Key Takeaways}{37}{section.9.1}%
+\contentsline {section}{\numberline {IX.2}Reflection on Objectives}{38}{section.9.2}%
+\contentsline {section}{\numberline {IX.3}Future Work}{38}{section.9.3}%
+\contentsline {chapter}{References}{41}{Item.58}%

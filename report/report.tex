@@ -541,6 +541,159 @@ Learning curves illustrate the model's performance on the training and validatio
 Confusion matrices provide a detailed breakdown of the model's performance by showing the number of true positive, true negative, false positive, and false negative predictions. This allows us to gain deeper insights into the strengths and weaknesses of each model, particularly in terms of their ability to correctly classify instances of each class.
 
 ROC-AUC curves provide a visual representation of the model's true positive rate against the false positive rate, helping us evaluate the model's performance across different thresholds.
+
+Precision-Recall curves illustrate the trade-off between precision and recall for different threshold values, providing insights into the model's ability to balance false positives and false negatives.
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_LR.png}
+			\caption{Learning Curve for Logistic Regression before Hyperparameter Tuning}
+			\label{lc_LR}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_tuned_LR.png}
+			\caption{Learning Curve for Logistic Regression after Hyperparameter Tuning}
+			\label{lc_tuned_LR}
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_KNN.png}
+			\caption{Learning Curve for K-Nearest Neighbors (KNN) before Hyperparameter Tuning}
+			\label{lc_KNN}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_tuned_KNN.png}
+			\caption{Learning Curve for K-Nearest Neighbors (KNN) after Hyperparameter Tuning}
+			\label{lc_tuned_KNN}
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_RF.png}
+			\caption{Learning Curve for Random Forest before Hyperparameter Tuning}
+			\label{lc_RF}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_tuned_RF.png}
+			\caption{Learning Curve for Random Forest after Hyperparameter Tuning}
+			\label{lc_tuned_RF}
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_DT.png}
+			\caption{Learning Curve for Decision Tree before Hyperparameter Tuning}
+			\label{lc_DT}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_tuned_DT.png}
+			\caption{Learning Curve for Decision Tree after Hyperparameter Tuning}
+			\label{lc_tuned_DT}
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_SVM.png}
+			\caption{Learning Curve for Support Vector Machine (SVM) before Hyperparameter Tuning}
+			\label{lc_SVM}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_tuned_SVM.png}
+			\caption{Learning Curve for Support Vector Machine (SVM) after Hyperparameter Tuning}
+			\label{lc_tuned_SVM}
+	\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_XG.png}
+			\caption{Learning Curve for XGBoost before Hyperparameter Tuning}
+			\label{lc_XG}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.45\textwidth}
+			\centering
+			\includegraphics[height=12em]{lc_tuned_XG.png}
+			\caption{Learning Curve for XGBoost after Hyperparameter Tuning}
+			\label{lc_tuned_XG}
+	\end{minipage}
+\end{figure}
+$ $ \\
+By analsing these learning curves we infer the following:
+\vspace{-1.25em}
+\begin{itemize}
+	\setlength\itemsep{-1.5em}
+		\item \textbf{Logistic Regression}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+					\setlength\itemsep{-1.5em}
+					\item \textbf{Before Tuning}: Moderate gap between training and validation accuracy, with validation scores plateauing slightly lower.
+					\item \textbf{After Tuning}: Reduced gap, with validation accuracy closely tracking training accuracy, suggesting a well-generalized model.
+			\end{itemize}
+		\item \textbf{KNN}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+					\setlength\itemsep{-1.5em}
+					\item \textbf{Before Tuning}: Significant overfitting is evident as training accuracy is very high while validation accuracy lags.
+					\item \textbf{After Tuning}: Validation accuracy improves significantly, and the gap narrows, suggesting that the optimal number of neighbors was found.
+				\end{itemize}
+		\item \textbf{Random Forest}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{Before Tuning}: Overfitting is apparent; training accuracy is high, but validation accuracy is much lower and plateaus early.
+        \item \textbf{After Tuning}: Validation accuracy improves substantially, with a narrower gap between training and validation curves, showing better generalization.
+			\end{itemize}
+		\item \textbf{Decision Tree}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{Before Tuning}: Severe overfitting with perfect training accuracy but low validation accuracy.
+        \item \textbf{After Tuning}: Validation accuracy improves considerably, with a more realistic and generalizable training score.
+			\end{itemize}
+		\item \textbf{SVM}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{Before Tuning}: Moderate gap between training and validation accuracy; validation scores plateau at a suboptimal level.
+        \item \textbf{After Tuning}: Narrowed gap and improved validation accuracy indicate better parameter selection.
+			\end{itemize}
+		\item \textbf{XGBoost}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{Before Tuning}: Overfitting is evident as training accuracy is high, but validation accuracy is lower.
+        \item \textbf{After Tuning}: Dramatic improvement in validation accuracy and narrowing of the gap indicate effective hyperparameter tuning.
+    \end{itemize}
+\end{itemize}
+
 \begin{figure}[H]
     \centering
     \begin{minipage}{0.45\textwidth}
@@ -642,14 +795,55 @@ ROC-AUC curves provide a visual representation of the model's true positive rate
     \end{minipage}
 \end{figure}
 $ $\\
-\noindent By analyzing these confusion matrices, we observe:
+\noindent By analyzing these confusion matrices, we can infer the following:
+
 \vspace{-1.25em}
 \begin{itemize}
-	\setlength\itemsep{-1.05em}
-	\item \textbf{Logistic Regression, SVM, and Voting Classifier} should be considered top choices for predicting smartphone prices due to their high accuracy and balanced performance.
-	\item \textbf{Random Forest and XGBoost} are also strong contenders and can be used if ensemble methods are preferred.
-	\item \textbf{KNN and Decision Tree} may require further tuning or may not be suitable for this specific task due to higher misclassification rates.
+	\setlength\itemsep{-1.5em}
+		\item \textbf{Logistic Regression}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+					\setlength\itemsep{-1.5em}
+					\item \textbf{Before Tuning}: Consistent performance with high true positives and low false positives.
+					\item \textbf{After Tuning}: Slight improvement in true positives for Class 1 and Class 3, indicating a well-optimized model.
+			\end{itemize}
+		\item \textbf{KNN}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+					\setlength\itemsep{-1.5em}
+					\item \textbf{Before Tuning}: Moderate performance with higher false positives, especially for Class 1 and Class 2.
+					\item \textbf{After Tuning}: Significant improvement in reducing false positives for Class 0 and Class 1, indicating effective hyperparameter tuning.
+				\end{itemize}
+		\item \textbf{Random Forest}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{Before Tuning}: High true positives but some false positives, particularly for Class 1 and Class 2.
+        \item \textbf{After Tuning}: Slight changes, indicating that the model was already performing well.
+			\end{itemize}
+		\item \textbf{Decision Tree}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{Before Tuning}: High true positives but some false positives, particularly for Class 1 and Class 2.
+        \item \textbf{After Tuning}: Slight changes, indicating that the model was already performing well.
+			\end{itemize}
+		\item \textbf{SVM}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{Before Tuning}: Consistent performance with high true positives and low false positives.
+        \item \textbf{After Tuning}: Slight improvement in true positives for Class 1 and Class 3, indicating a well-optimized model.
+			\end{itemize}
+		\item \textbf{XGBoost}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{Before Tuning}: High true positives but some false positives, particularly for Class 1 and Class 2.
+        \item \textbf{After Tuning}: Slight changes, indicating that the model was already performing well.
+    \end{itemize}
 \end{itemize}
+
 \section{Evaluation Metrics}
 The initial model training resulted good accuracy during training but some inconsistencies in test performance, meaning there was overfitting.
 \begin{table}[H]

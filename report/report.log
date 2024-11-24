@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.18)  24 NOV 2024 19:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.18)  24 NOV 2024 20:17
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1099,339 +1099,388 @@ Underfull \hbox (badness 10000) in paragraph at lines 524--525
 
 [25]
 Section VII.
-<cmat_LR.png, id=434, 270.2898pt x 228.3732pt>
-File: cmat_LR.png Graphic file (type png)
-<use cmat_LR.png>
-Package pdftex.def Info: cmat_LR.png  used on input line 548.
-(pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_LR.png, id=435, 329.5512pt x 228.3732pt>
-File: cmat_tuned_LR.png Graphic file (type png)
-<use cmat_tuned_LR.png>
-Package pdftex.def Info: cmat_tuned_LR.png  used on input line 555.
-(pdftex.def)             Requested size: 207.80942pt x 144.0pt.
+<lc_LR.png, id=434, 287.6346pt x 228.3732pt>
+File: lc_LR.png Graphic file (type png)
+<use lc_LR.png>
+Package pdftex.def Info: lc_LR.png  used on input line 551.
+(pdftex.def)             Requested size: 181.37752pt x 144.0pt.
+<lc_tuned_LR.png, id=435, 316.5426pt x 228.3732pt>
+File: lc_tuned_LR.png Graphic file (type png)
+<use lc_tuned_LR.png>
+Package pdftex.def Info: lc_tuned_LR.png  used on input line 558.
+(pdftex.def)             Requested size: 199.60643pt x 144.0pt.
 
 
 [26
 
 ]
-<cmat_KNN.png, id=440, 263.7855pt x 228.3732pt>
+<lc_KNN.png, id=440, 281.853pt x 228.3732pt>
+File: lc_KNN.png Graphic file (type png)
+<use lc_KNN.png>
+Package pdftex.def Info: lc_KNN.png  used on input line 568.
+(pdftex.def)             Requested size: 177.73175pt x 144.0pt.
+<lc_tuned_KNN.png, id=441, 281.853pt x 228.3732pt>
+File: lc_tuned_KNN.png Graphic file (type png)
+<use lc_tuned_KNN.png>
+Package pdftex.def Info: lc_tuned_KNN.png  used on input line 575.
+(pdftex.def)             Requested size: 177.73175pt x 144.0pt.
+<lc_RF.png, id=442, 281.853pt x 228.3732pt>
+File: lc_RF.png Graphic file (type png)
+<use lc_RF.png>
+Package pdftex.def Info: lc_RF.png  used on input line 585.
+(pdftex.def)             Requested size: 177.73175pt x 144.0pt.
+<lc_tuned_RF.png, id=443, 304.2567pt x 228.3732pt>
+File: lc_tuned_RF.png Graphic file (type png)
+<use lc_tuned_RF.png>
+Package pdftex.def Info: lc_tuned_RF.png  used on input line 592.
+(pdftex.def)             Requested size: 191.85915pt x 144.0pt.
+<lc_DT.png, id=444, 281.853pt x 228.3732pt>
+File: lc_DT.png Graphic file (type png)
+<use lc_DT.png>
+Package pdftex.def Info: lc_DT.png  used on input line 602.
+(pdftex.def)             Requested size: 177.73175pt x 144.0pt.
+<lc_tuned_DT.png, id=445, 299.1978pt x 228.3732pt>
+File: lc_tuned_DT.png Graphic file (type png)
+<use lc_tuned_DT.png>
+Package pdftex.def Info: lc_tuned_DT.png  used on input line 609.
+(pdftex.def)             Requested size: 188.66908pt x 144.0pt.
+
+
+[27 <./lc_LR.png> <./lc_tuned_LR.png> <./lc_KNN.png> <./lc_tuned_KNN.png> <./lc_RF.png> <./lc_tuned_RF.png>]
+<lc_SVM.png, id=462, 281.853pt x 228.3732pt>
+File: lc_SVM.png Graphic file (type png)
+<use lc_SVM.png>
+Package pdftex.def Info: lc_SVM.png  used on input line 619.
+(pdftex.def)             Requested size: 177.73175pt x 144.0pt.
+<lc_tuned_SVM.png, id=463, 281.853pt x 228.3732pt>
+File: lc_tuned_SVM.png Graphic file (type png)
+<use lc_tuned_SVM.png>
+Package pdftex.def Info: lc_tuned_SVM.png  used on input line 626.
+(pdftex.def)             Requested size: 177.73175pt x 144.0pt.
+<lc_XG.png, id=464, 281.853pt x 228.3732pt>
+File: lc_XG.png Graphic file (type png)
+<use lc_XG.png>
+Package pdftex.def Info: lc_XG.png  used on input line 636.
+(pdftex.def)             Requested size: 177.73175pt x 144.0pt.
+<lc_tuned_XG.png, id=465, 284.7438pt x 228.3732pt>
+File: lc_tuned_XG.png Graphic file (type png)
+<use lc_tuned_XG.png>
+Package pdftex.def Info: lc_tuned_XG.png  used on input line 643.
+(pdftex.def)             Requested size: 179.55464pt x 144.0pt.
+
+
+[28 <./lc_DT.png> <./lc_tuned_DT.png> <./lc_SVM.png> <./lc_tuned_SVM.png> <./lc_XG.png> <./lc_tuned_XG.png>]
+<cmat_LR.png, id=482, 270.2898pt x 228.3732pt>
+File: cmat_LR.png Graphic file (type png)
+<use cmat_LR.png>
+Package pdftex.def Info: cmat_LR.png  used on input line 701.
+(pdftex.def)             Requested size: 170.44019pt x 144.0pt.
+<cmat_tuned_LR.png, id=483, 329.5512pt x 228.3732pt>
+File: cmat_tuned_LR.png Graphic file (type png)
+<use cmat_tuned_LR.png>
+Package pdftex.def Info: cmat_tuned_LR.png  used on input line 708.
+(pdftex.def)             Requested size: 207.80942pt x 144.0pt.
+
+
+[29]
+<cmat_KNN.png, id=488, 263.7855pt x 228.3732pt>
 File: cmat_KNN.png Graphic file (type png)
 <use cmat_KNN.png>
-Package pdftex.def Info: cmat_KNN.png  used on input line 565.
+Package pdftex.def Info: cmat_KNN.png  used on input line 718.
 (pdftex.def)             Requested size: 166.33868pt x 144.0pt.
-<cmat_tuned_KNN.png, id=441, 263.7855pt x 228.3732pt>
+<cmat_tuned_KNN.png, id=489, 263.7855pt x 228.3732pt>
 File: cmat_tuned_KNN.png Graphic file (type png)
 <use cmat_tuned_KNN.png>
-Package pdftex.def Info: cmat_tuned_KNN.png  used on input line 572.
+Package pdftex.def Info: cmat_tuned_KNN.png  used on input line 725.
 (pdftex.def)             Requested size: 166.33868pt x 144.0pt.
-<cmat_RF.png, id=442, 270.2898pt x 228.3732pt>
+
+Underfull \hbox (badness 6808) in paragraph at lines 726--726
+[]\OT1/EBGaramond-OsF/m/n/12 Figure VII.16: []Confusion Ma-trix for K-Nearest
+ []
+
+<cmat_RF.png, id=490, 270.2898pt x 228.3732pt>
 File: cmat_RF.png Graphic file (type png)
 <use cmat_RF.png>
-Package pdftex.def Info: cmat_RF.png  used on input line 583.
+Package pdftex.def Info: cmat_RF.png  used on input line 736.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_RF.png, id=443, 304.2567pt x 228.3732pt>
+<cmat_tuned_RF.png, id=491, 304.2567pt x 228.3732pt>
 File: cmat_tuned_RF.png Graphic file (type png)
 <use cmat_tuned_RF.png>
-Package pdftex.def Info: cmat_tuned_RF.png  used on input line 590.
+Package pdftex.def Info: cmat_tuned_RF.png  used on input line 743.
 (pdftex.def)             Requested size: 191.85915pt x 144.0pt.
-<cmat_DT.png, id=444, 270.2898pt x 228.3732pt>
+<cmat_DT.png, id=492, 270.2898pt x 228.3732pt>
 File: cmat_DT.png Graphic file (type png)
 <use cmat_DT.png>
-Package pdftex.def Info: cmat_DT.png  used on input line 600.
+Package pdftex.def Info: cmat_DT.png  used on input line 753.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_DT.png, id=445, 294.1389pt x 228.3732pt>
+<cmat_tuned_DT.png, id=493, 294.1389pt x 228.3732pt>
 File: cmat_tuned_DT.png Graphic file (type png)
 <use cmat_tuned_DT.png>
-Package pdftex.def Info: cmat_tuned_DT.png  used on input line 607.
+Package pdftex.def Info: cmat_tuned_DT.png  used on input line 760.
 (pdftex.def)             Requested size: 185.47902pt x 144.0pt.
-<cmat_SVM.png, id=446, 270.2898pt x 228.3732pt>
+<cmat_SVM.png, id=494, 270.2898pt x 228.3732pt>
 File: cmat_SVM.png Graphic file (type png)
 <use cmat_SVM.png>
-Package pdftex.def Info: cmat_SVM.png  used on input line 616.
+Package pdftex.def Info: cmat_SVM.png  used on input line 769.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_SVM.png, id=447, 270.2898pt x 228.3732pt>
+<cmat_tuned_SVM.png, id=495, 270.2898pt x 228.3732pt>
 File: cmat_tuned_SVM.png Graphic file (type png)
 <use cmat_tuned_SVM.png>
-Package pdftex.def Info: cmat_tuned_SVM.png  used on input line 623.
+Package pdftex.def Info: cmat_tuned_SVM.png  used on input line 776.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
 
 
-[27 <./cmat_LR.png> <./cmat_tuned_LR.png> <./cmat_KNN.png> <./cmat_tuned_KNN.png> <./cmat_RF.png> <./cmat_tuned_RF.png>]
-<cmat_XG.png, id=464, 270.2898pt x 228.3732pt>
+[30 <./cmat_LR.png> <./cmat_tuned_LR.png> <./cmat_KNN.png> <./cmat_tuned_KNN.png> <./cmat_RF.png> <./cmat_tuned_RF.png>]
+<cmat_XG.png, id=513, 270.2898pt x 228.3732pt>
 File: cmat_XG.png Graphic file (type png)
 <use cmat_XG.png>
-Package pdftex.def Info: cmat_XG.png  used on input line 632.
+Package pdftex.def Info: cmat_XG.png  used on input line 785.
 (pdftex.def)             Requested size: 170.44019pt x 144.0pt.
-<cmat_tuned_XG.png, id=465, 274.626pt x 228.3732pt>
+<cmat_tuned_XG.png, id=514, 274.626pt x 228.3732pt>
 File: cmat_tuned_XG.png Graphic file (type png)
 <use cmat_tuned_XG.png>
-Package pdftex.def Info: cmat_tuned_XG.png  used on input line 639.
+Package pdftex.def Info: cmat_tuned_XG.png  used on input line 792.
 (pdftex.def)             Requested size: 173.17451pt x 144.0pt.
 
 
-[28 <./cmat_DT.png> <./cmat_tuned_DT.png> <./cmat_SVM.png> <./cmat_tuned_SVM.png> <./cmat_XG.png> <./cmat_tuned_XG.png>]
-Overfull \hbox (3.0768pt too wide) in paragraph at lines 659--659
+[31 <./cmat_DT.png> <./cmat_tuned_DT.png> <./cmat_SVM.png> <./cmat_tuned_SVM.png> <./cmat_XG.png> <./cmat_tuned_XG.png>]
+Overfull \hbox (3.0768pt too wide) in paragraph at lines 853--853
 []|\OT1/EBGaramond-OsF/b/n/12 Accuracy
  []
 
 
-Overfull \hbox (3.0768pt too wide) in paragraph at lines 659--659
+Overfull \hbox (3.0768pt too wide) in paragraph at lines 853--853
 []|\OT1/EBGaramond-OsF/b/n/12 Accuracy
  []
 
 
-Overfull \hbox (3.5688pt too wide) in paragraph at lines 659--659
+Overfull \hbox (3.5688pt too wide) in paragraph at lines 853--853
 []|\OT1/EBGaramond-OsF/b/n/12 Precision
  []
 
 
-Overfull \hbox (3.5688pt too wide) in paragraph at lines 659--659
+Overfull \hbox (3.5688pt too wide) in paragraph at lines 853--853
 []|\OT1/EBGaramond-OsF/b/n/12 Precision
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--659
+Underfull \hbox (badness 10000) in paragraph at lines 853--853
 []|\OT1/EBGaramond-OsF/b/n/12 Recall
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--659
+Underfull \hbox (badness 10000) in paragraph at lines 853--853
 []|\OT1/EBGaramond-OsF/b/n/12 Recall
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--659
+Underfull \hbox (badness 10000) in paragraph at lines 853--853
 []|\OT1/EBGaramond-OsF/b/n/12 F1-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--659
+Underfull \hbox (badness 10000) in paragraph at lines 853--853
 \OT1/EBGaramond-OsF/b/n/12 Score
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--660
+Underfull \hbox (badness 10000) in paragraph at lines 853--854
 []|\OT1/EBGaramond-OsF/b/n/12 F1-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 659--660
+Underfull \hbox (badness 10000) in paragraph at lines 853--854
 \OT1/EBGaramond-OsF/b/n/12 Score
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 661--661
+Underfull \hbox (badness 10000) in paragraph at lines 855--855
 []|\OT1/EBGaramond-OsF/m/n/12 Logistic Re-
  []
 
 
-Overfull \hbox (3.81525pt too wide) in paragraph at lines 661--661
+Overfull \hbox (3.81525pt too wide) in paragraph at lines 855--855
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9464$| 
  []
 
 
-Overfull \hbox (3.76724pt too wide) in paragraph at lines 661--662
+Overfull \hbox (3.76724pt too wide) in paragraph at lines 855--856
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9443$| 
  []
 
 
-Overfull \hbox (2.95125pt too wide) in paragraph at lines 663--663
+Overfull \hbox (2.95125pt too wide) in paragraph at lines 857--857
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 8588$| 
  []
 
 
-Overfull \hbox (3.68324pt too wide) in paragraph at lines 663--664
+Overfull \hbox (3.68324pt too wide) in paragraph at lines 857--858
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 7279$| 
  []
 
 
-Overfull \hbox (2.99922pt too wide) in paragraph at lines 665--665
+Overfull \hbox (2.99922pt too wide) in paragraph at lines 859--859
 []|$\OT1/EBGaramond-LF/m/n/12 1\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 0000$| 
  []
 
 
-Overfull \hbox (2.95125pt too wide) in paragraph at lines 665--666
+Overfull \hbox (2.95125pt too wide) in paragraph at lines 859--860
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 8885$| 
  []
 
 
-Overfull \hbox (2.99922pt too wide) in paragraph at lines 667--667
+Overfull \hbox (2.99922pt too wide) in paragraph at lines 861--861
 []|$\OT1/EBGaramond-LF/m/n/12 1\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 0000$| 
  []
 
 
-Overfull \hbox (2.01524pt too wide) in paragraph at lines 667--668
+Overfull \hbox (2.01524pt too wide) in paragraph at lines 861--862
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 8715$| 
  []
 
 
-Overfull \hbox (3.57524pt too wide) in paragraph at lines 669--669
+Overfull \hbox (3.57524pt too wide) in paragraph at lines 863--863
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9546$| 
  []
 
 
-Overfull \hbox (3.95923pt too wide) in paragraph at lines 669--670
+Overfull \hbox (3.95923pt too wide) in paragraph at lines 863--864
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9070$| 
  []
 
 
-Overfull \hbox (2.99922pt too wide) in paragraph at lines 671--671
+Overfull \hbox (2.99922pt too wide) in paragraph at lines 865--865
 []|$\OT1/EBGaramond-LF/m/n/12 1\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 0000$| 
  []
 
 
-Overfull \hbox (2.39925pt too wide) in paragraph at lines 671--672
+Overfull \hbox (2.39925pt too wide) in paragraph at lines 865--866
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9164$| 
  []
 
 
-Overfull \hbox (3.0768pt too wide) in paragraph at lines 693--693
+
+[32]
+Overfull \hbox (3.0768pt too wide) in paragraph at lines 887--887
 []|\OT1/EBGaramond-OsF/b/n/12 Accuracy
  []
 
 
-Overfull \hbox (3.5688pt too wide) in paragraph at lines 693--693
+Overfull \hbox (3.5688pt too wide) in paragraph at lines 887--887
 []|\OT1/EBGaramond-OsF/b/n/12 Precision
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--693
+Underfull \hbox (badness 10000) in paragraph at lines 887--887
 []|\OT1/EBGaramond-OsF/b/n/12 Recall
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--693
+Underfull \hbox (badness 10000) in paragraph at lines 887--887
 []|\OT1/EBGaramond-OsF/b/n/12 F1-Score
  []
 
 
-Overfull \hbox (3.0768pt too wide) in paragraph at lines 693--693
+Overfull \hbox (3.0768pt too wide) in paragraph at lines 887--887
 []|\OT1/EBGaramond-OsF/b/n/12 Accuracy
  []
 
 
-Overfull \hbox (3.5688pt too wide) in paragraph at lines 693--693
+Overfull \hbox (3.5688pt too wide) in paragraph at lines 887--887
 []|\OT1/EBGaramond-OsF/b/n/12 Precision
  []
 
 
-Overfull \hbox (2.49522pt too wide) in paragraph at lines 693--693
+Overfull \hbox (2.49522pt too wide) in paragraph at lines 887--887
 []|\OT1/EBGaramond-OsF/b/n/12 Recall
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 887--888
 []|\OT1/EBGaramond-OsF/b/n/12 F1-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+Underfull \hbox (badness 10000) in paragraph at lines 887--888
 \OT1/EBGaramond-OsF/b/n/12 Score
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--695
+Underfull \hbox (badness 10000) in paragraph at lines 889--889
 []|\OT1/EBGaramond-OsF/m/n/12 Logistic Re-
  []
 
 
-Overfull \hbox (3.57524pt too wide) in paragraph at lines 695--695
+Overfull \hbox (3.57524pt too wide) in paragraph at lines 889--889
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9495$| 
  []
 
 
-Overfull \hbox (3.57524pt too wide) in paragraph at lines 695--696
+Overfull \hbox (3.57524pt too wide) in paragraph at lines 889--890
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9493$| 
  []
 
 
-Overfull \hbox (3.68324pt too wide) in paragraph at lines 697--697
+Overfull \hbox (3.68324pt too wide) in paragraph at lines 891--891
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 7626$| 
  []
 
 
-Overfull \hbox (3.69524pt too wide) in paragraph at lines 697--698
+Overfull \hbox (3.69524pt too wide) in paragraph at lines 891--892
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 7670$| 
  []
 
 
-Overfull \hbox (2.99925pt too wide) in paragraph at lines 699--699
+Overfull \hbox (2.99925pt too wide) in paragraph at lines 893--893
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 8889$| 
  []
 
 
-Overfull \hbox (2.99925pt too wide) in paragraph at lines 699--700
+Overfull \hbox (2.99925pt too wide) in paragraph at lines 893--894
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 8889$| 
  []
 
 
-Overfull \hbox (2.31525pt too wide) in paragraph at lines 701--701
+Overfull \hbox (2.31525pt too wide) in paragraph at lines 895--895
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 8712$| 
  []
 
 
-Overfull \hbox (2.32724pt too wide) in paragraph at lines 701--702
+Overfull \hbox (2.32724pt too wide) in paragraph at lines 895--896
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 8710$| 
  []
 
 
-Overfull \hbox (3.89923pt too wide) in paragraph at lines 703--703
+Overfull \hbox (3.89923pt too wide) in paragraph at lines 897--897
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9520$| 
  []
 
 
-Overfull \hbox (2.01524pt too wide) in paragraph at lines 703--704
+Overfull \hbox (2.01524pt too wide) in paragraph at lines 897--898
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9518$| 
  []
 
 
-Overfull \hbox (2.45924pt too wide) in paragraph at lines 705--705
+Overfull \hbox (2.45924pt too wide) in paragraph at lines 899--899
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9192$| 
  []
 
 
-Overfull \hbox (2.47124pt too wide) in paragraph at lines 705--706
+Overfull \hbox (2.47124pt too wide) in paragraph at lines 899--900
 []|$\OT1/EBGaramond-LF/m/n/12 0\OML/EBGaramond-Maths/m/it/12 :\OT1/EBGaramond-LF/m/n/12 9190$| 
  []
 
 
 
-[29]
-
-[30]
-
-[31]
-Section VIII.
-
-Underfull \hbox (badness 10000) in paragraph at lines 740--742
-
- []
-
-
-
-[32
-
-]
-Section IX.
-
-
-[33
-
-]
+[33]
 
 [34]
 
 [35]
-LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 848.
+Section VIII.
 
-Underfull \hbox (badness 1038) in paragraph at lines 854--855
-[]\OT1/EBGaramond-OsF/m/n/12 Chandrashekhara, K. T., and M. Thunga-mani. "Smart-phone Price Pre-dic-tion in Re-tail In-dus-try Us-ing Ma-
- []
+Underfull \hbox (badness 10000) in paragraph at lines 934--936
 
-
-Underfull \hbox (badness 1237) in paragraph at lines 854--855
-\OT1/EBGaramond-OsF/m/n/12 chine Learn-ing Tech-niques." In \OT1/EBGaramond-OsF/m/it/12 Emerg-ing Re-search in Elec-tron-ics, Com-puter Sci-ence and Tech-nol-ogy, Lec-ture
  []
 
 
@@ -1439,8 +1488,35 @@ Underfull \hbox (badness 1237) in paragraph at lines 854--855
 [36
 
 ]
+Section IX.
 
-[37] (./report.aux)
+
+[37
+
+]
+
+[38]
+
+[39]
+LaTeX Font Info:    Font shape `OT1/EBGaramond-OsF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 1042.
+
+Underfull \hbox (badness 1038) in paragraph at lines 1048--1049
+[]\OT1/EBGaramond-OsF/m/n/12 Chandrashekhara, K. T., and M. Thunga-mani. "Smart-phone Price Pre-dic-tion in Re-tail In-dus-try Us-ing Ma-
+ []
+
+
+Underfull \hbox (badness 1237) in paragraph at lines 1048--1049
+\OT1/EBGaramond-OsF/m/n/12 chine Learn-ing Tech-niques." In \OT1/EBGaramond-OsF/m/it/12 Emerg-ing Re-search in Elec-tron-ics, Com-puter Sci-ence and Tech-nol-ogy, Lec-ture
+ []
+
+
+
+[40
+
+]
+
+[41] (./report.aux)
  ***********
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
@@ -1453,18 +1529,18 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 6099523709ABE8E65A77ED225BC28D58;5563.
  ) 
 Here is how much of TeX's memory you used:
- 28769 strings out of 473584
- 532968 string characters out of 5732357
- 1956908 words of memory out of 5000000
- 50960 multiletter control sequences out of 15000+600000
+ 28881 strings out of 473584
+ 534864 string characters out of 5732357
+ 1953908 words of memory out of 5000000
+ 51056 multiletter control sequences out of 15000+600000
  588557 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,101p,1397b,1333s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Bold.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Italic.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/ebgaramond/EBGaramond-Regular.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xbtt.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on report.pdf (38 pages, 1447286 bytes).
+Output written on report.pdf (42 pages, 1748706 bytes).
 PDF statistics:
- 634 PDF objects out of 1000 (max. 8388607)
- 523 compressed objects within 6 object streams
- 168 named destinations out of 1000 (max. 500000)
- 454 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 690 PDF objects out of 1000 (max. 8388607)
+ 551 compressed objects within 6 object streams
+ 184 named destinations out of 1000 (max. 500000)
+ 514 words of extra memory for PDF output out of 10000 (max. 10000000)
 
