@@ -387,7 +387,8 @@ The \pythoninline{SelectKBest} method from \pythoninline{sklearn.feature_selecti
 Initially, \pythoninline{k='all'} is set to retain all features for evaluation, allowing for the computation of statistical metrics across all features. \\
 After fitting the model, the p-values and F-scores for each feature are extracted. These metrics help assess the significance and contribution of each feature to the target variable. \\
 Features with a p-value less than $0.05$ are considered statistically significant and are selected for further analysis. \\
-The selected features are \pythoninline{['battery_power', 'int_memory', 'mobile_wt', 'n_cores', 'ram', 'px_area']} \\
+The selected features are: \\
+\pythoninline{['battery_power', 'int_memory', 'mobile_wt', 'n_cores', 'ram', 'px_area', 'screen_area']} \\
 These are then used for model training and evaluation to determine their impact on prediction accuracy and model performance.
 
 
@@ -694,6 +695,7 @@ By analsing these learning curves we infer the following:
     \end{itemize}
 \end{itemize}
 
+Next we will look at the confusion matrices.
 \begin{figure}[H]
     \centering
     \begin{minipage}{0.45\textwidth}
@@ -844,6 +846,98 @@ $ $\\
     \end{itemize}
 \end{itemize}
 
+Next we will look at the ROC-AUC and Precision-Recall curves.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=14em]{ra_pr_LR.png}
+    \caption{Precision-Recall and ROC-AUC curves for Logistic Regression}
+    \label{ra_pr_LR}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=14em]{ra_pr_KNN.png}
+    \caption{Precision-Recall and ROC-AUC curves for K-Nearest Neighbors (KNN)}
+    \label{ra_pr_KNN}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=14em]{ra_pr_RF.png}
+    \caption{Precision-Recall and ROC-AUC curves for Random Forest}
+    \label{ra_pr_RF}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=14em]{ra_pr_DT.png}
+    \caption{Precision-Recall and ROC-AUC curves for Decision Tree}
+    \label{ra_pr_DT}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=14em]{ra_pr_SVM.png}
+    \caption{Precision-Recall and ROC-AUC curves for Support Vector Machine (SVM)}
+    \label{ra_pr_SVM}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=14em]{ra_pr_XG.png}
+    \caption{Precision-Recall and ROC-AUC curves for XGBoost}
+    \label{ra_pr_XG}
+\end{figure}
+
+By analsing the above curves we infer the following:
+\vspace{-1.25em}
+\begin{itemize}
+	\setlength\itemsep{-1.5em}
+		\item \textbf{Logistic Regression}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+					\setlength\itemsep{-1.5em}
+					\item \textbf{ROC-AUC}: The curves are tightly grouped, indicating good separation between the classes. The AUC values are relatively high for most classes, showing reliable performance in distinguishing between them.
+					\item \textbf{Precision-Recall}: The curve is above 0.5, which indicates that the model is effective, particularly for Class 0 (with the highest AUC).
+			\end{itemize}
+		\item \textbf{KNN}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+					\setlength\itemsep{-1.5em}
+					\item \textbf{ROC-AUC}: The curves for some classes are lower compared to others, indicating less effective separation for certain classes. AUC values for some classes are below 0.9.
+					\item \textbf{Precision-Recall}: There is a noticeable drop for some classes, indicating that KNN struggles with precision at lower recall levels.
+				\end{itemize}
+		\item \textbf{Random Forest}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{ROC-AUC}: Shows strong performance with AUC close to 1.0 for most classes, suggesting that the model performs very well in distinguishing between the classes.
+        \item \textbf{Precision-Recall}: High curves for most classes, indicating strong precision, especially for Class 0.
+			\end{itemize}
+		\item \textbf{Decision Tree}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{ROC-AUC}: Shows some weaknesses with lower AUC values, particularly for Class 2 and Class 3, indicating less reliable separation.
+        \item \textbf{Precision-Recall}: The curves drop significantly for some classes, suggesting that the Decision Tree may not be as reliable in predicting positive cases for certain classes.
+			\end{itemize}
+		\item \textbf{SVM}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{ROC-AUC}: High AUC values for most classes, suggesting strong class separation. The performance is consistent across classes.
+        \item \textbf{Precision-Recall}: Shows good performance for most classes, indicating a high level of precision across various thresholds.
+			\end{itemize}
+		\item \textbf{XGBoost}:
+		\vspace{-1.25em}	
+		\begin{itemize}
+				\setlength\itemsep{-1.5em}
+        \item \textbf{ROC-AUC}: Excellent performance with AUC close to 1.0 for most classes, suggesting that XGBoost is particularly strong at distinguishing between classes.
+        \item \textbf{Precision-Recall}: Similar to Random Forest, XGBoost shows high precision-recall curves, indicating reliable prediction, particularly for Class 0 and Class 1.
+    \end{itemize}
+\end{itemize}
+
 \section{Evaluation Metrics}
 The initial model training resulted good accuracy during training but some inconsistencies in test performance, meaning there was overfitting.
 \begin{table}[H]
@@ -903,33 +997,51 @@ As we can see there are overfitting issues with some models. We used \pythoninli
 	\label{tab:tuned_per_mat}
 \end{table}
 
-Comparing the matrices form Table \ref{tab:model_perf_mat} amd Table \ref{tab:tuned_per_mat} we can infer:
+Time time taken for training the models was as follows:
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lcc}
+	\toprule
+	\textbf{Model} & \textbf{Time Taken (seconds)} \\
+	\toprule
+	Logistic Regression & $0.008992$ \\
+	\midrule
+	KNN & $0.001998$ \\
+	\midrule
+	Random Forest & $0.262442$ \\
+	\midrule
+	Decision Tree & $0.007005$ \\
+	\midrule
+	SVM & $0.237206$ \\
+	\midrule
+	XGBoost & $0.211886$ \\
+	\toprule
+	\end{tabular}
+	\caption{Time Taken for Model Training}
+	\label{tab:time_taken}
+\end{table}
+As we can see Logistic Regression, KNN and Decision Tree are the fastest to train while Random Forest, SVM and XGBoost take the most time. This is expected as Random Forest and SVM are more complex models and require more time to train.
 
-\vspace{-1.5em}
-\begin{itemize}
-\setlength\itemsep{-1.5em}
-\item \textbf{Logistic Regression:} The performance metrics remained consistent after hyperparameter tuning, indicating that the model was already well-optimized.
-\item \textbf{KNN:} There was a significant improvement in test accuracy from $0.7222$ to $0.7790$, as well as improvements in precision, recall, and F1-score, suggesting that hyperparameter tuning effectively addressed underfitting.
-\item \textbf{Random Forest:} The test accuracy slightly decreased from $0.8889$ to $0.8906$, but the model maintained high performance, indicating that hyperparameter tuning helped in balancing the training and test metrics.
-\item \textbf{Decision Tree:} The performance metrics remained relatively stable, with a slight improvement in test precision and recall, indicating that hyperparameter tuning helped in reducing overfitting.
-\item \textbf{SVM:} The test accuracy improved from $0.9066$ to $0.9518$, along with improvements in precision, recall, and F1-score, suggesting that hyperparameter tuning significantly enhanced the model's performance.
-\item \textbf{XGBoost:} The test accuracy improved from $0.9167$ to $0.9196$, with consistent improvements in other metrics, indicating that hyperparameter tuning helped in maintaining high performance and efficient learning.
-\end{itemize}
 
 \section{Comparison between different Models}
+Comparing the matrices form Table \ref{tab:model_perf_mat} amd Table \ref{tab:tuned_per_mat} we can infer:
+\vspace{-1.5em}
 \begin{itemize}
-	\setlength\itemsep{-1.05em}
-	\item \textbf{Logistic Regression:} Achieved high accuracy on both training ($0.943125$) and test ($0.9500$) sets, indicating good generalization. Precision, recall, and F1-score are also high, making it a reliable model for this task.
-	\item \textbf{KNN:} Showed moderate performance with a test accuracy of $0.7600$. The lower precision, recall, and F1-score suggest that KNN may not be the best choice for this dataset.
-	\item \textbf{Random Forest:} Exhibited perfect training accuracy ($1.000000$) but lower test accuracy ($0.8950$), indicating potential overfitting. However, it still performed well on the test set with good precision, recall, and F1-score.
-	\item \textbf{Decision Tree:} Similar to Random Forest, it showed perfect training accuracy ($1.000000$) but lower test accuracy ($0.8425$), suggesting overfitting. The precision, recall, and F1-score are also lower compared to Random Forest.
-	\item \textbf{SVM:} Demonstrated strong performance with high accuracy on both training ($0.951875$) and test ($0.9175$) sets. The high precision, recall, and F1-score indicate that SVM is a robust model for this task.
-	\item \textbf{XGBoost:} Achieved perfect training accuracy ($1.000000$) and high test accuracy ($0.9125$). The precision, recall, and F1-score are also high, making it a strong contender for this task.
-	\item \textbf{Voting Classifier:} Combined the strengths of multiple models, resulting in high test accuracy ($0.9150$) and strong precision, recall, and F1-score. This ensemble method provides a balanced and accurate prediction system.
+	\setlength\itemsep{-1.5em}
+	\item \textbf{Logistic Regression:} The performance metrics remained consistent after hyperparameter tuning, indicating that the model was already well-optimized.
+	\item \textbf{KNN:} There was a significant improvement in test accuracy from $0.7222$ to $0.7790$, as well as improvements in precision, recall, and F1-score, suggesting that hyperparameter tuning effectively addressed underfitting.
+	\item \textbf{Random Forest:} The test accuracy slightly decreased from $0.8889$ to $0.8906$, but the model maintained high performance, indicating that hyperparameter tuning helped in balancing the training and test metrics.
+	\item \textbf{Decision Tree:} The performance metrics remained relatively stable, with a slight improvement in test precision and recall, indicating that hyperparameter tuning helped in reducing overfitting.
+	\item \textbf{SVM:} The test accuracy improved from $0.9066$ to $0.9518$, along with improvements in precision, recall, and F1-score, suggesting that hyperparameter tuning significantly enhanced the model's performance.
+	\item \textbf{XGBoost:} The test accuracy improved from $0.9167$ to $0.9196$, with consistent improvements in other metrics, indicating that hyperparameter tuning helped in maintaining high performance and efficient learning.
 \end{itemize}
 
 \chapter{Discussion}
 \section{Analysis of Results}
+\textbf{Logistic Regression} performed reliably, especially after minor improvements post-tuning. \textbf{KNN} and \textbf{Decision Tree} struggled with certain classes, as evident from their lower Precision-Recall curves. \textbf{XGBoost} and \textbf{SVM} consistently achieved high F1-scores, indicating a strong balance between precision and recall. 
+
+\textbf{Random Forest}, \textbf{Decision Tree}, and \textbf{XGBoost} are inherently complex and hence prone to overfitting. \textbf{GridSearchCV} significantly improved the balance between training and test metrics for most models, particularly \textbf{KNN} and \textbf{SVM}.
+
 \section{Anomalies and Unexpected Findings}
 The dataset we chose did not have any class imbalances but there may have been challenges related to it, which can affect model predictions, particularly in underrepresented categories. \\
 Also we found that among the 19 features, 13 were not much important such as 3G, 4G, front and primary camera quality, and screen resolution components. Removing redundant features improved model performance and reduced complexity. \\	

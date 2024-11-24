@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1732459649.44415 "d:/Projects/smartphone_price_prediction/report/report.tex" "report.pdf" "report" 1732459653.69055 0
+["pdflatex"] 1732466692.7977 "d:/Projects/smartphone_price_prediction/report/report.tex" "report.pdf" "report" 1732466697.41429 0
   "all_feature_viz.png" 1732423391 323504 1d1771aa56cc7f3f4ba4facd1700d49b ""
   "box_plots_after.png" 1732257147 141388 d47aacf04b6b1a81847844c6b3c191b3 ""
   "box_plots_before.png" 1732257131 143447 d4687cab9f9863a28d9670e5204c0c0d ""
@@ -241,7 +241,7 @@
   "cmat_tuned_XG.png" 1732455262 20414 9211ac086bbbf74b7ed231ddb086a053 ""
   "corr_viz.png" 1732257996 236768 b50f25733642404bf9ade1713d34371b ""
   "corr_viz_after_fe.png" 1732424076 209789 213fab57393fc16a524367d9385aa301 ""
-  "d:/Projects/smartphone_price_prediction/report/report.tex" 1732459648 66541 aa4edfcfde7bdc97a51ec970f3701325 ""
+  "d:/Projects/smartphone_price_prediction/report/report.tex" 1732466687 70501 8a2ab8c1ad880a1b56ada275280fc785 ""
   "imbalance_check.png" 1732258835 9889 98c2fc0e627240c4383daa87b38a9223 ""
   "lc_DT.png" 1732454423 28862 90eb58ffddc251fb78fe1911effc9c7f ""
   "lc_KNN.png" 1732454410 32642 c3324eea4c1202025879d4822e52a5ca ""
@@ -258,10 +258,16 @@
   "nrmlz_plots.png" 1732441701 96903 e09ad9348f87d440a14b76d57c4fbfde ""
   "nrmlz_px_ba.png" 1732442169 61309 56f75c1da11188a102e11d97d40c6a16 ""
   "nrmlz_screen_ba.png" 1732442160 59390 b1e205a1338077e3032d36d6ede07c58 ""
-  "report.aux" 1732459653 16798 c076b204dc2ecafed32a4aee8649837a "pdflatex"
-  "report.out" 1732459653 5563 6099523709abe8e65a77ed225bc28d58 "pdflatex"
-  "report.tex" 1732459648 66541 aa4edfcfde7bdc97a51ec970f3701325 ""
-  "report.toc" 1732459653 3226 0bbb66b88c8eefa56251645a4043f5a1 "pdflatex"
+  "ra_pr_DT.png" 1732458166 82033 5e9221c521e48c4ad24478bf3f82973a ""
+  "ra_pr_KNN.png" 1732458149 88491 1f4445fabacb623312dffcda35228782 ""
+  "ra_pr_LR.png" 1732458143 51731 30f00df6cd9d79c08e8a11818b57898f ""
+  "ra_pr_RF.png" 1732458155 62905 47e82bd5e02db9cd583bbb1636f26e19 ""
+  "ra_pr_SVM.png" 1732458177 54071 f02124285beb60f8480f06e4a5f7dc71 ""
+  "ra_pr_XG.png" 1732458186 53625 9364fc3517bb8699a22a8c5d132953eb ""
+  "report.aux" 1732466697 18744 1410b30f6297f448b729f43ea65173e0 "pdflatex"
+  "report.out" 1732466697 5563 6099523709abe8e65a77ed225bc28d58 "pdflatex"
+  "report.tex" 1732466687 70501 8a2ab8c1ad880a1b56ada275280fc785 ""
+  "report.toc" 1732466697 3226 a976e64b3dc76e1455269f7a9f0d1fa3 "pdflatex"
   (generated)
   "report.aux"
   "report.log"
