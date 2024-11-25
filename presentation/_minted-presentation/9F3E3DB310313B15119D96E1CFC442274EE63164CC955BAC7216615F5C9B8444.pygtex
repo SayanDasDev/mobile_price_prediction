@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{to\PYGZus{}replace\PYGZus{}with\PYGZus{}mean} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}sc\PYGZus{}w\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}px\PYGZus{}height\PYGZsq{}}\PYG{p}{]}
+
+\PYG{k}{for} \PYG{n}{feature} \PYG{o+ow}{in} \PYG{n}{to\PYGZus{}replace\PYGZus{}with\PYGZus{}mean}\PYG{p}{:}
+  \PYG{n}{df}\PYG{p}{[}\PYG{n}{feature}\PYG{p}{]} \PYG{o}{=} \PYG{n}{df}\PYG{p}{[}\PYG{n}{feature}\PYG{p}{]}\PYG{o}{.}\PYG{n}{replace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{df}\PYG{p}{[}\PYG{n}{feature}\PYG{p}{]}\PYG{o}{.}\PYG{n}{mean}\PYG{p}{())}
+\end{Verbatim}

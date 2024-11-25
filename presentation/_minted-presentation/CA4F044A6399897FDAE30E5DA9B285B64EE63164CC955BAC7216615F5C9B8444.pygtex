@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{remove\PYGZus{}outliers\PYGZus{}iqr}\PYG{p}{(}\PYG{n}{data}\PYG{p}{,} \PYG{n}{column}\PYG{p}{):}
+  \PYG{n}{Q1} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{n}{column}\PYG{p}{]}\PYG{o}{.}\PYG{n}{quantile}\PYG{p}{(}\PYG{l+m+mf}{0.25}\PYG{p}{)}
+  \PYG{n}{Q3} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[}\PYG{n}{column}\PYG{p}{]}\PYG{o}{.}\PYG{n}{quantile}\PYG{p}{(}\PYG{l+m+mf}{0.75}\PYG{p}{)}
+  \PYG{n}{IQR} \PYG{o}{=} \PYG{n}{Q3} \PYG{o}{\PYGZhy{}} \PYG{n}{Q1}
+
+  \PYG{n}{lower\PYGZus{}bound} \PYG{o}{=} \PYG{n}{Q1} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{1.5} \PYG{o}{*} \PYG{n}{IQR}
+  \PYG{n}{upper\PYGZus{}bound} \PYG{o}{=} \PYG{n}{Q3} \PYG{o}{+} \PYG{l+m+mf}{1.5} \PYG{o}{*} \PYG{n}{IQR}
+
+  \PYG{n}{filtered\PYGZus{}data} \PYG{o}{=} \PYG{n}{data}\PYG{p}{[(}\PYG{n}{data}\PYG{p}{[}\PYG{n}{column}\PYG{p}{]} \PYG{o}{\PYGZgt{}=} \PYG{n}{lower\PYGZus{}bound}\PYG{p}{)} \PYG{o}{\PYGZam{}}
+                       \PYG{p}{(}\PYG{n}{data}\PYG{p}{[}\PYG{n}{column}\PYG{p}{]} \PYG{o}{\PYGZlt{}=} \PYG{n}{upper\PYGZus{}bound}\PYG{p}{)]}
+  \PYG{k}{return} \PYG{n}{filtered\PYGZus{}data}
+
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{remove\PYGZus{}outliers\PYGZus{}iqr}\PYG{p}{(}\PYG{n}{df}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}fc\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{df} \PYG{o}{=} \PYG{n}{remove\PYGZus{}outliers\PYGZus{}iqr}\PYG{p}{(}\PYG{n}{df}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}px\PYGZus{}height\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

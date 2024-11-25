@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+  \PYG{n}{battery\PYGZus{}power}    \PYG{l+m+mi}{0}
+  \PYG{n}{blue}             \PYG{l+m+mi}{0}
+  \PYG{n}{clock\PYGZus{}speed}      \PYG{l+m+mi}{0}
+  \PYG{n}{dual\PYGZus{}sim}         \PYG{l+m+mi}{0}
+  \PYG{n}{fc}               \PYG{l+m+mi}{0}
+  \PYG{n}{four\PYGZus{}g}           \PYG{l+m+mi}{0}
+  \PYG{n}{int\PYGZus{}memory}       \PYG{l+m+mi}{0}
+  \PYG{n}{m\PYGZus{}dep}            \PYG{l+m+mi}{0}
+  \PYG{n}{mobile\PYGZus{}wt}        \PYG{l+m+mi}{0}
+  \PYG{n}{n\PYGZus{}cores}          \PYG{l+m+mi}{0}
+  \PYG{n}{pc}               \PYG{l+m+mi}{0}
+  \PYG{n}{px\PYGZus{}height}        \PYG{l+m+mi}{0}
+  \PYG{n}{px\PYGZus{}width}         \PYG{l+m+mi}{0}
+  \PYG{n}{ram}              \PYG{l+m+mi}{0}
+  \PYG{n}{sc\PYGZus{}h}             \PYG{l+m+mi}{0}
+  \PYG{n}{sc\PYGZus{}w}             \PYG{l+m+mi}{0}
+  \PYG{n}{talk\PYGZus{}time}        \PYG{l+m+mi}{0}
+  \PYG{n}{three\PYGZus{}g}          \PYG{l+m+mi}{0}
+  \PYG{n}{touch\PYGZus{}screen}     \PYG{l+m+mi}{0}
+  \PYG{n}{wifi}             \PYG{l+m+mi}{0}
+  \PYG{n}{price\PYGZus{}range}      \PYG{l+m+mi}{0}
+  \PYG{n}{dtype}\PYG{p}{:} \PYG{n}{int64}
+
+\end{Verbatim}
