@@ -1,0 +1,35 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{n}{param\PYGZus{}grids} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+  \PYG{l+s+s1}{\PYGZsq{}Logistic Regression\PYGZsq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}C\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mf}{0.01}\PYG{p}{,} \PYG{l+m+mf}{0.1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}solver\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}liblinear\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}saga\PYGZsq{}}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}penalty\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}l1\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}l2\PYGZsq{}}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}iter\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{500}\PYG{p}{,} \PYG{l+m+mi}{1000}\PYG{p}{]}
+  \PYG{p}{\PYGZcb{},}
+  \PYG{l+s+s1}{\PYGZsq{}KNN\PYGZsq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}n\PYGZus{}neighbors\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{7}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}weights\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}uniform\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}distance\PYGZsq{}}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}p\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{]}
+  \PYG{p}{\PYGZcb{},}
+  \PYG{l+s+s1}{\PYGZsq{}Random Forest\PYGZsq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}n\PYGZus{}estimators\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}depth\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{k+kc}{None}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}min\PYGZus{}samples\PYGZus{}split\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{]}
+  \PYG{p}{\PYGZcb{},}
+  \PYG{l+s+s1}{\PYGZsq{}Decision Tree\PYGZsq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}depth\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{k+kc}{None}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}criterion\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}gini\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}entropy\PYGZsq{}}\PYG{p}{]}
+  \PYG{p}{\PYGZcb{},}
+  \PYG{l+s+s1}{\PYGZsq{}SVM\PYGZsq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}C\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mf}{0.1}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}kernel\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}linear\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}rbf\PYGZsq{}}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}gamma\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}scale\PYGZsq{}}\PYG{p}{]}
+  \PYG{p}{\PYGZcb{},}
+  \PYG{l+s+s1}{\PYGZsq{}XGBoost\PYGZsq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}learning\PYGZus{}rate\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mf}{0.05}\PYG{p}{,} \PYG{l+m+mf}{0.1}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}n\PYGZus{}estimators\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}max\PYGZus{}depth\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{6}\PYG{p}{]}
+  \PYG{p}{\PYGZcb{},}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

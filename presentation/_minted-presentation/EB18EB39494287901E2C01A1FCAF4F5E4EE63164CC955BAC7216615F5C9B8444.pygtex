@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{models} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+  \PYG{l+s+s1}{\PYGZsq{}Logistic Regression\PYGZsq{}}\PYG{p}{:} \PYG{n}{LogisticRegression}\PYG{p}{(}\PYG{n}{max\PYGZus{}iter}\PYG{o}{=}\PYG{l+m+mi}{1000}\PYG{p}{),}
+  \PYG{l+s+s1}{\PYGZsq{}KNN\PYGZsq{}}\PYG{p}{:} \PYG{n}{KNeighborsClassifier}\PYG{p}{(),}
+  \PYG{l+s+s1}{\PYGZsq{}Random Forest\PYGZsq{}}\PYG{p}{:} \PYG{n}{RandomForestClassifier}\PYG{p}{(),}
+  \PYG{l+s+s1}{\PYGZsq{}Decision Tree\PYGZsq{}}\PYG{p}{:} \PYG{n}{DecisionTreeClassifier}\PYG{p}{(),}
+  \PYG{l+s+s1}{\PYGZsq{}SVM\PYGZsq{}}\PYG{p}{:} \PYG{n}{SVC}\PYG{p}{(}\PYG{n}{probability}\PYG{o}{=}\PYG{k+kc}{True}\PYG{p}{),}
+  \PYG{l+s+s1}{\PYGZsq{}XGBoost\PYGZsq{}}\PYG{p}{:} \PYG{n}{XGBClassifier}\PYG{p}{(}\PYG{n}{eval\PYGZus{}metric}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}mlogloss\PYGZsq{}}\PYG{p}{),}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

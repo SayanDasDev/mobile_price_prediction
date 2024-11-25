@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.18)  25 NOV 2024 16:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.18)  25 NOV 2024 18:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -703,6 +703,79 @@ Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
 \extratabsurround=\skip71
 \backup@length=\skip72
 \ar@cellbox=\box88
+) (c:/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2024/05/23 v1.9h multicolumn formatting (FMi)
+\c@tracingmulticols=\count393
+\mult@box=\box89
+\multicol@leftmargin=\dimen325
+\c@unbalance=\count394
+\c@collectmore=\count395
+\doublecol@number=\count396
+\multicoltolerance=\count397
+\multicolpretolerance=\count398
+\full@width=\dimen326
+\page@free=\dimen327
+\premulticols=\dimen328
+\postmulticols=\dimen329
+\multicolsep=\skip73
+\multicolbaselineskip=\skip74
+\partial@page=\box90
+\last@line=\box91
+\mc@boxedresult=\box92
+\maxbalancingoverflow=\dimen330
+\mult@rightbox=\box93
+\mult@grightbox=\box94
+\mult@firstbox=\box95
+\mult@gfirstbox=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\c@minrows=\count399
+\c@columnbadness=\count400
+\c@finalcolumnbadness=\count401
+\last@try=\dimen331
+\multicolovershoot=\dimen332
+\multicolundershoot=\dimen333
+\mult@nat@firstbox=\box133
+\colbreak@box=\box134
+\mc@col@check@num=\count402
+) (c:/texlive/2024/texmf-dist/tex/latex/changepage/changepage.sty
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count403
+\cp@tempcnt=\count404
 )
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > presentation.aex <nul: /p x=^%~$PATH:i>> presentation.aex)...executed.
 
@@ -766,16 +839,16 @@ LaTeX Font Info:    ... okay on input line 16.
 
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count393
-\scratchdimen=\dimen325
-\scratchbox=\box89
-\nofMPsegments=\count394
-\nofMParguments=\count395
+\scratchcounter=\count405
+\scratchdimen=\dimen334
+\scratchbox=\box135
+\nofMPsegments=\count406
+\nofMParguments=\count407
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count396
-\MPscratchDim=\dimen326
-\MPnumerator=\count397
-\makeMPintoPDFobject=\count398
+\MPscratchCnt=\count408
+\MPscratchDim=\dimen335
+\MPnumerator=\count409
+\makeMPintoPDFobject=\count410
 \everyMPtoPDFconversion=\toks53
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -898,7 +971,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 [12
 
 ]
-<kaggle.png, id=113, 1059.96pt x 481.8pt>
+<kaggle.png, id=125, 1059.96pt x 481.8pt>
 File: kaggle.png Graphic file (type png)
 <use kaggle.png>
 Package pdftex.def Info: kaggle.png  used on input line 76.
@@ -936,7 +1009,7 @@ Overfull \vbox (4.40384pt too high) detected at line 108
 [16
 
 ]
-<missing_val.png, id=141, 1490.2074pt x 682.9515pt>
+<missing_val.png, id=153, 1490.2074pt x 682.9515pt>
 File: missing_val.png Graphic file (type png)
 <use missing_val.png>
 Package pdftex.def Info: missing_val.png  used on input line 151.
@@ -991,7 +1064,7 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 
 
 ]
-<../report/box_plots_before.png, id=173, 1582.713pt x 1167.8832pt>
+<../report/box_plots_before.png, id=185, 1582.713pt x 1167.8832pt>
 File: ../report/box_plots_before.png Graphic file (type png)
 <use ../report/box_plots_before.png>
 Package pdftex.def Info: ../report/box_plots_before.png  used on input line 298.
@@ -1024,7 +1097,7 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 [25
 
 ]
-<../report/box_plots_after.png, id=200, 1582.713pt x 1167.8832pt>
+<../report/box_plots_after.png, id=212, 1582.713pt x 1167.8832pt>
 File: ../report/box_plots_after.png Graphic file (type png)
 <use ../report/box_plots_after.png>
 Package pdftex.def Info: ../report/box_plots_after.png  used on input line 349.
@@ -1034,7 +1107,7 @@ Package pdftex.def Info: ../report/box_plots_after.png  used on input line 349.
 [26
 
  <../report/box_plots_after.png>]
-<../report/imbalance_check.png, id=207, 412.6617pt x 312.9291pt>
+<../report/imbalance_check.png, id=219, 412.6617pt x 312.9291pt>
 File: ../report/imbalance_check.png Graphic file (type png)
 <use ../report/imbalance_check.png>
 Package pdftex.def Info: ../report/imbalance_check.png  used on input line 370.
@@ -1044,12 +1117,12 @@ Package pdftex.def Info: ../report/imbalance_check.png  used on input line 370.
 [27
 
  <../report/imbalance_check.png>]
-<../report/corr_viz.png, id=214, 716.1957pt x 667.0521pt>
+<../report/corr_viz.png, id=226, 716.1957pt x 667.0521pt>
 File: ../report/corr_viz.png Graphic file (type png)
 <use ../report/corr_viz.png>
 Package pdftex.def Info: ../report/corr_viz.png  used on input line 385.
 (pdftex.def)             Requested size: 234.22444pt x 218.15326pt.
-<../report/corr_viz_after_fe.png, id=215, 716.1957pt x 667.0521pt>
+<../report/corr_viz_after_fe.png, id=227, 716.1957pt x 667.0521pt>
 File: ../report/corr_viz_after_fe.png Graphic file (type png)
 <use ../report/corr_viz_after_fe.png>
 Package pdftex.def Info: ../report/corr_viz_after_fe.png  used on input line 415.
@@ -1110,12 +1183,742 @@ Overfull \vbox (1.31851pt too high) detected at line 423
 [37
 
 ]
+\openout5 = `presentation.pyg'.
+
+ (./_minted-presentation/EB18EB39494287901E2C01A1FCAF4F5E4EE63164CC955BAC7216615F5C9B8444.pygtex)
+Overfull \hbox (4.8141pt too wide) in paragraph at lines 520--520
+[]|\OT1/cmss/bx/n/8 Accuracy
+ []
+
+
+Overfull \hbox (4.8141pt too wide) in paragraph at lines 520--520
+[]|\OT1/cmss/bx/n/8 Accuracy
+ []
+
+
+Overfull \hbox (4.49854pt too wide) in paragraph at lines 520--520
+[]|\OT1/cmss/bx/n/8 Precision
+ []
+
+
+Overfull \hbox (4.49854pt too wide) in paragraph at lines 520--520
+[]|\OT1/cmss/bx/n/8 Precision
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
+[]|\OT1/cmss/bx/n/8 Recall
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
+[]|\OT1/cmss/bx/n/8 Recall
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
+[]|\OT1/cmss/bx/n/8 F1-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--520
+\OT1/cmss/bx/n/8 Score
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
+[]|\OT1/cmss/bx/n/8 F1-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
+\OT1/cmss/bx/n/8 Score
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 522--522
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9464$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 522--523
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9443$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 524--524
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 8588$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 524--525
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 7279$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+[]|\OT1/cmss/m/n/8 Random
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 526--526
+[]|$\OT1/cmss/m/n/8 1\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 0000$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 526--527
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 8885$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--528
+[]|\OT1/cmss/m/n/8 Decision
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 528--528
+[]|$\OT1/cmss/m/n/8 1\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 0000$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 528--529
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 8715$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 530--530
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9546$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 530--531
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9070$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 532--532
+[]|$\OT1/cmss/m/n/8 1\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 0000$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 532--533
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9164$| 
+ []
+
+<../report/taining_time.png, id=282, 393.8715pt x 298.4751pt>
+File: ../report/taining_time.png Graphic file (type png)
+<use ../report/taining_time.png>
+Package pdftex.def Info: ../report/taining_time.png  used on input line 541.
+(pdftex.def)             Requested size: 262.82875pt x 199.1693pt.
+
 
 [38
 
 ]
 
 [39
+
+
+]
+
+[40
+
+
+ <../report/taining_time.png>]
+\openout5 = `presentation.pyg'.
+
+ (./_minted-presentation/1CECA296FF25B6CA2B7FE6BCADA442AD4EE63164CC955BAC7216615F5C9B8444.pygtex
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <8> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 17.
+)
+\openout5 = `presentation.pyg'.
+
+ (./_minted-presentation/6EBCAA990F26B28E6CB69D4885DA4A854EE63164CC955BAC7216615F5C9B8444.pygtex)
+Overfull \hbox (4.8141pt too wide) in paragraph at lines 614--614
+[]|\OT1/cmss/bx/n/8 Accuracy
+ []
+
+
+Overfull \hbox (4.8141pt too wide) in paragraph at lines 614--614
+[]|\OT1/cmss/bx/n/8 Accuracy
+ []
+
+
+Overfull \hbox (4.49854pt too wide) in paragraph at lines 614--614
+[]|\OT1/cmss/bx/n/8 Precision
+ []
+
+
+Overfull \hbox (4.49854pt too wide) in paragraph at lines 614--614
+[]|\OT1/cmss/bx/n/8 Precision
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--614
+[]|\OT1/cmss/bx/n/8 Recall
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--614
+[]|\OT1/cmss/bx/n/8 Recall
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--614
+[]|\OT1/cmss/bx/n/8 F1-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--614
+\OT1/cmss/bx/n/8 Score
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
+[]|\OT1/cmss/bx/n/8 F1-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 614--615
+\OT1/cmss/bx/n/8 Score
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 616--616
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9457$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 616--617
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9493$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 618--618
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 8596$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 618--619
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 7670$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 620--620
+[]|\OT1/cmss/m/n/8 Random
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 620--620
+[]|$\OT1/cmss/m/n/8 1\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 0000$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 620--621
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 8889$| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 622--622
+[]|\OT1/cmss/m/n/8 Decision
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 622--622
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9968$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 622--623
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 8710$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 624--624
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9476$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 624--625
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9518$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 626--626
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9962$| 
+ []
+
+
+Overfull \hbox (2.2719pt too wide) in paragraph at lines 626--627
+[]|$\OT1/cmss/m/n/8 0\OML/cmm/m/it/8 :\OT1/cmss/m/n/8 9190$| 
+ []
+
+
+
+[41
+
+]
+
+[42
+
+
+]
+
+[43
+
+
+]
+
+[44
+
+
+]
+<../report/lc_LR.png, id=324, 287.6346pt x 228.3732pt>
+File: ../report/lc_LR.png Graphic file (type png)
+<use ../report/lc_LR.png>
+Package pdftex.def Info: ../report/lc_LR.png  used on input line 856.
+(pdftex.def)             Requested size: 213.11398pt x 169.19806pt.
+
+Overfull \hbox (33.86284pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_tuned_LR.png, id=325, 316.5426pt x 228.3732pt>
+File: ../report/lc_tuned_LR.png Graphic file (type png)
+<use ../report/lc_tuned_LR.png>
+Package pdftex.def Info: ../report/lc_tuned_LR.png  used on input line 856.
+(pdftex.def)             Requested size: 234.53249pt x 169.19806pt.
+
+Overfull \hbox (55.28134pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_KNN.png, id=326, 281.853pt x 228.3732pt>
+File: ../report/lc_KNN.png Graphic file (type png)
+<use ../report/lc_KNN.png>
+Package pdftex.def Info: ../report/lc_KNN.png  used on input line 856.
+(pdftex.def)             Requested size: 208.83029pt x 169.19806pt.
+
+Overfull \hbox (29.57915pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_tuned_KNN.png, id=327, 281.853pt x 228.3732pt>
+File: ../report/lc_tuned_KNN.png Graphic file (type png)
+<use ../report/lc_tuned_KNN.png>
+Package pdftex.def Info: ../report/lc_tuned_KNN.png  used on input line 856.
+(pdftex.def)             Requested size: 208.83029pt x 169.19806pt.
+
+Overfull \hbox (29.57915pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_RF.png, id=328, 281.853pt x 228.3732pt>
+File: ../report/lc_RF.png Graphic file (type png)
+<use ../report/lc_RF.png>
+Package pdftex.def Info: ../report/lc_RF.png  used on input line 856.
+(pdftex.def)             Requested size: 208.83029pt x 169.19806pt.
+
+Overfull \hbox (29.57915pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_tuned_RF.png, id=329, 304.2567pt x 228.3732pt>
+File: ../report/lc_tuned_RF.png Graphic file (type png)
+<use ../report/lc_tuned_RF.png>
+Package pdftex.def Info: ../report/lc_tuned_RF.png  used on input line 856.
+(pdftex.def)             Requested size: 225.42963pt x 169.19806pt.
+
+Overfull \hbox (46.17848pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_DT.png, id=330, 281.853pt x 228.3732pt>
+File: ../report/lc_DT.png Graphic file (type png)
+<use ../report/lc_DT.png>
+Package pdftex.def Info: ../report/lc_DT.png  used on input line 856.
+(pdftex.def)             Requested size: 208.83029pt x 169.19806pt.
+
+Overfull \hbox (29.57915pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_tuned_DT.png, id=331, 299.1978pt x 228.3732pt>
+File: ../report/lc_tuned_DT.png Graphic file (type png)
+<use ../report/lc_tuned_DT.png>
+Package pdftex.def Info: ../report/lc_tuned_DT.png  used on input line 856.
+(pdftex.def)             Requested size: 221.68138pt x 169.19806pt.
+
+Overfull \hbox (42.43024pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_SVM.png, id=332, 281.853pt x 228.3732pt>
+File: ../report/lc_SVM.png Graphic file (type png)
+<use ../report/lc_SVM.png>
+Package pdftex.def Info: ../report/lc_SVM.png  used on input line 856.
+(pdftex.def)             Requested size: 208.83029pt x 169.19806pt.
+
+Overfull \hbox (29.57915pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_tuned_SVM.png, id=333, 281.853pt x 228.3732pt>
+File: ../report/lc_tuned_SVM.png Graphic file (type png)
+<use ../report/lc_tuned_SVM.png>
+Package pdftex.def Info: ../report/lc_tuned_SVM.png  used on input line 856.
+(pdftex.def)             Requested size: 208.83029pt x 169.19806pt.
+
+Overfull \hbox (29.57915pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_XG.png, id=334, 281.853pt x 228.3732pt>
+File: ../report/lc_XG.png Graphic file (type png)
+<use ../report/lc_XG.png>
+Package pdftex.def Info: ../report/lc_XG.png  used on input line 856.
+(pdftex.def)             Requested size: 208.83029pt x 169.19806pt.
+
+Overfull \hbox (29.57915pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/lc_tuned_XG.png, id=335, 284.7438pt x 228.3732pt>
+File: ../report/lc_tuned_XG.png Graphic file (type png)
+<use ../report/lc_tuned_XG.png>
+Package pdftex.def Info: ../report/lc_tuned_XG.png  used on input line 856.
+(pdftex.def)             Requested size: 210.97214pt x 169.19806pt.
+
+Overfull \hbox (31.721pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_LR.png, id=336, 270.2898pt x 228.3732pt>
+File: ../report/cmat_LR.png Graphic file (type png)
+<use ../report/cmat_LR.png>
+Package pdftex.def Info: ../report/cmat_LR.png  used on input line 856.
+(pdftex.def)             Requested size: 200.2629pt x 169.19806pt.
+
+Overfull \hbox (21.01175pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_tuned_LR.png, id=337, 329.5512pt x 228.3732pt>
+File: ../report/cmat_tuned_LR.png Graphic file (type png)
+<use ../report/cmat_tuned_LR.png>
+Package pdftex.def Info: ../report/cmat_tuned_LR.png  used on input line 856.
+(pdftex.def)             Requested size: 244.17079pt x 169.19806pt.
+
+Overfull \hbox (64.91965pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_KNN.png, id=338, 263.7855pt x 228.3732pt>
+File: ../report/cmat_KNN.png Graphic file (type png)
+<use ../report/cmat_KNN.png>
+Package pdftex.def Info: ../report/cmat_KNN.png  used on input line 856.
+(pdftex.def)             Requested size: 195.44374pt x 169.19806pt.
+
+Overfull \hbox (16.1926pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_tuned_KNN.png, id=339, 263.7855pt x 228.3732pt>
+File: ../report/cmat_tuned_KNN.png Graphic file (type png)
+<use ../report/cmat_tuned_KNN.png>
+Package pdftex.def Info: ../report/cmat_tuned_KNN.png  used on input line 856.
+(pdftex.def)             Requested size: 195.44374pt x 169.19806pt.
+
+Overfull \hbox (16.1926pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_RF.png, id=340, 270.2898pt x 228.3732pt>
+File: ../report/cmat_RF.png Graphic file (type png)
+<use ../report/cmat_RF.png>
+Package pdftex.def Info: ../report/cmat_RF.png  used on input line 856.
+(pdftex.def)             Requested size: 200.2629pt x 169.19806pt.
+
+Overfull \hbox (21.01175pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_tuned_RF.png, id=341, 304.2567pt x 228.3732pt>
+File: ../report/cmat_tuned_RF.png Graphic file (type png)
+<use ../report/cmat_tuned_RF.png>
+Package pdftex.def Info: ../report/cmat_tuned_RF.png  used on input line 856.
+(pdftex.def)             Requested size: 225.42963pt x 169.19806pt.
+
+Overfull \hbox (46.17848pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_DT.png, id=342, 270.2898pt x 228.3732pt>
+File: ../report/cmat_DT.png Graphic file (type png)
+<use ../report/cmat_DT.png>
+Package pdftex.def Info: ../report/cmat_DT.png  used on input line 856.
+(pdftex.def)             Requested size: 200.2629pt x 169.19806pt.
+
+Overfull \hbox (21.01175pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_tuned_DT.png, id=343, 294.1389pt x 228.3732pt>
+File: ../report/cmat_tuned_DT.png Graphic file (type png)
+<use ../report/cmat_tuned_DT.png>
+Package pdftex.def Info: ../report/cmat_tuned_DT.png  used on input line 856.
+(pdftex.def)             Requested size: 217.93315pt x 169.19806pt.
+
+Overfull \hbox (38.682pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_SVM.png, id=344, 270.2898pt x 228.3732pt>
+File: ../report/cmat_SVM.png Graphic file (type png)
+<use ../report/cmat_SVM.png>
+Package pdftex.def Info: ../report/cmat_SVM.png  used on input line 856.
+(pdftex.def)             Requested size: 200.2629pt x 169.19806pt.
+
+Overfull \hbox (21.01175pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_tuned_SVM.png, id=345, 270.2898pt x 228.3732pt>
+File: ../report/cmat_tuned_SVM.png Graphic file (type png)
+<use ../report/cmat_tuned_SVM.png>
+Package pdftex.def Info: ../report/cmat_tuned_SVM.png  used on input line 856.
+(pdftex.def)             Requested size: 200.2629pt x 169.19806pt.
+
+Overfull \hbox (21.01175pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_XG.png, id=346, 270.2898pt x 228.3732pt>
+File: ../report/cmat_XG.png Graphic file (type png)
+<use ../report/cmat_XG.png>
+Package pdftex.def Info: ../report/cmat_XG.png  used on input line 856.
+(pdftex.def)             Requested size: 200.2629pt x 169.19806pt.
+
+Overfull \hbox (21.01175pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/cmat_tuned_XG.png, id=347, 274.626pt x 228.3732pt>
+File: ../report/cmat_tuned_XG.png Graphic file (type png)
+<use ../report/cmat_tuned_XG.png>
+Package pdftex.def Info: ../report/cmat_tuned_XG.png  used on input line 856.
+(pdftex.def)             Requested size: 203.47566pt x 169.19806pt.
+
+Overfull \hbox (24.22452pt too wide) in paragraph at lines 856--856
+ [][] 
+ []
+
+<../report/ra_pr_LR.png, id=348, 859.2903pt x 354.123pt>
+File: ../report/ra_pr_LR.png Graphic file (type png)
+<use ../report/ra_pr_LR.png>
+Package pdftex.def Info: ../report/ra_pr_LR.png  used on input line 856.
+(pdftex.def)             Requested size: 410.56657pt x 169.19806pt.
+
+Overfull \hbox (3.69208pt too wide) in paragraph at lines 856--856
+ [] 
+ []
+
+<../report/ra_pr_KNN.png, id=349, 859.2903pt x 354.123pt>
+File: ../report/ra_pr_KNN.png Graphic file (type png)
+<use ../report/ra_pr_KNN.png>
+Package pdftex.def Info: ../report/ra_pr_KNN.png  used on input line 856.
+(pdftex.def)             Requested size: 410.56657pt x 169.19806pt.
+
+Overfull \hbox (3.69208pt too wide) in paragraph at lines 856--856
+ [] 
+ []
+
+<../report/ra_pr_RF.png, id=350, 859.2903pt x 354.123pt>
+File: ../report/ra_pr_RF.png Graphic file (type png)
+<use ../report/ra_pr_RF.png>
+Package pdftex.def Info: ../report/ra_pr_RF.png  used on input line 856.
+(pdftex.def)             Requested size: 410.56657pt x 169.19806pt.
+
+Overfull \hbox (3.69208pt too wide) in paragraph at lines 856--856
+ [] 
+ []
+
+<../report/ra_pr_DT.png, id=351, 859.2903pt x 354.123pt>
+File: ../report/ra_pr_DT.png Graphic file (type png)
+<use ../report/ra_pr_DT.png>
+Package pdftex.def Info: ../report/ra_pr_DT.png  used on input line 856.
+(pdftex.def)             Requested size: 410.56657pt x 169.19806pt.
+
+Overfull \hbox (3.69208pt too wide) in paragraph at lines 856--856
+ [] 
+ []
+
+<../report/ra_pr_SVM.png, id=352, 859.2903pt x 354.123pt>
+File: ../report/ra_pr_SVM.png Graphic file (type png)
+<use ../report/ra_pr_SVM.png>
+Package pdftex.def Info: ../report/ra_pr_SVM.png  used on input line 856.
+(pdftex.def)             Requested size: 410.56657pt x 169.19806pt.
+
+Overfull \hbox (3.69208pt too wide) in paragraph at lines 856--856
+ [] 
+ []
+
+<../report/ra_pr_XG.png, id=353, 859.2903pt x 354.123pt>
+File: ../report/ra_pr_XG.png Graphic file (type png)
+<use ../report/ra_pr_XG.png>
+Package pdftex.def Info: ../report/ra_pr_XG.png  used on input line 856.
+(pdftex.def)             Requested size: 410.56657pt x 169.19806pt.
+
+Overfull \hbox (3.69208pt too wide) in paragraph at lines 856--856
+ [] 
+ []
+
+
+
+[45
+
+ <../report/lc_LR.png> <../report/lc_tuned_LR.png>]
+
+[46
+
+
+ <../report/lc_KNN.png> <../report/lc_tuned_KNN.png>]
+
+[47
+
+
+ <../report/lc_RF.png> <../report/lc_tuned_RF.png>]
+
+[48
+
+
+ <../report/lc_DT.png> <../report/lc_tuned_DT.png>]
+
+[49
+
+
+ <../report/lc_SVM.png> <../report/lc_tuned_SVM.png>]
+
+[50
+
+
+ <../report/lc_XG.png> <../report/lc_tuned_XG.png>]
+
+[51
+
+
+ <../report/cmat_LR.png> <../report/cmat_tuned_LR.png>]
+
+[52
+
+
+ <../report/cmat_KNN.png> <../report/cmat_tuned_KNN.png>]
+
+[53
+
+
+ <../report/cmat_RF.png> <../report/cmat_tuned_RF.png>]
+
+[54
+
+
+ <../report/cmat_DT.png> <../report/cmat_tuned_DT.png>]
+
+[55
+
+
+ <../report/cmat_SVM.png> <../report/cmat_tuned_SVM.png>]
+
+[56
+
+
+ <../report/cmat_XG.png> <../report/cmat_tuned_XG.png>]
+
+[57
+
+
+ <../report/ra_pr_LR.png>]
+
+[58
+
+
+ <../report/ra_pr_KNN.png>]
+
+[59
+
+
+ <../report/ra_pr_RF.png>]
+
+[60
+
+
+ <../report/ra_pr_DT.png>]
+
+[61
+
+
+ <../report/ra_pr_SVM.png>]
+
+[62
+
+
+ <../report/ra_pr_XG.png>]
+
+[63
+
+]
+
+[64
+
+]
+<feature_importance.png, id=517, 654.0435pt x 395.3169pt>
+File: feature_importance.png Graphic file (type png)
+<use feature_importance.png>
+Package pdftex.def Info: feature_importance.png  used on input line 880.
+(pdftex.def)             Requested size: 326.59181pt x 197.39774pt.
+
+
+[65
+
+ <./feature_importance.png>]
+
+[66
+
+]
+
+[67
+
+]
+
+[68
+
+]
+
+[69
+
+]
+
+[70
+
+]
+
+[71
+
+]
+
+[72
+
+ <c:/texlive/2024/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
+
+[73
+
+]
+
+[74
+
+]
+
+[75
 
 ]
 \tf@nav=\write8
@@ -1133,23 +1936,23 @@ LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
  ***********
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 8FAB4F8CE29EE4AE7367003DBE1F44BF;591.
+(rerunfilecheck)             Checksum: EEA159054D75AD20DC1A9CD0FA9DF4F8;891.
 runsystem(del presentation.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 26264 strings out of 473584
- 519221 string characters out of 5732357
- 1944908 words of memory out of 5000000
- 48484 multiletter control sequences out of 15000+600000
- 572895 words of font info for 91 fonts, out of 8000000 for 9000
+ 26977 strings out of 473584
+ 534885 string characters out of 5732357
+ 1950908 words of memory out of 5000000
+ 49071 multiletter control sequences out of 15000+600000
+ 573545 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,11n,123p,461b,848s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on presentation.pdf (39 pages, 829574 bytes).
+ 128i,11n,123p,538b,848s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on presentation.pdf (75 pages, 1700736 bytes).
 PDF statistics:
- 353 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
- 84 named destinations out of 1000 (max. 500000)
- 148 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 688 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 193 named destinations out of 1000 (max. 500000)
+ 324 words of extra memory for PDF output out of 10000 (max. 10000000)
 

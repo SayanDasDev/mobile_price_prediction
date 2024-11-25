@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{for} \PYG{n}{model\PYGZus{}name}\PYG{p}{,} \PYG{n}{model} \PYG{o+ow}{in} \PYG{n}{models}\PYG{o}{.}\PYG{n}{items}\PYG{p}{():}
+  \PYG{n}{pipeline} \PYG{o}{=} \PYG{n}{Pipeline}\PYG{p}{([}
+      \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}scaler\PYGZsq{}}\PYG{p}{,} \PYG{n}{StandardScaler}\PYG{p}{()),}
+      \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}classifier\PYGZsq{}}\PYG{p}{,} \PYG{n}{model}\PYG{p}{)}
+  \PYG{p}{])}
+  \PYG{n}{param\PYGZus{}grid} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+      \PYG{l+s+sa}{f}\PYG{l+s+s1}{\PYGZsq{}classifier\PYGZus{}\PYGZus{}}\PYG{l+s+si}{\PYGZob{}}\PYG{n}{key}\PYG{l+s+si}{\PYGZcb{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:} \PYG{n}{value} \PYG{k}{for} \PYG{n}{key}\PYG{p}{,} \PYG{n}{value} \PYG{o+ow}{in} \PYG{n}{param\PYGZus{}grids}\PYG{p}{[}\PYG{n}{model\PYGZus{}name}\PYG{p}{]}\PYG{o}{.}\PYG{n}{items}\PYG{p}{()}
+  \PYG{p}{\PYGZcb{}}
+  \PYG{n}{grid\PYGZus{}search} \PYG{o}{=} \PYG{n}{GridSearchCV}\PYG{p}{(}\PYG{n}{pipeline}\PYG{p}{,} \PYG{n}{param\PYGZus{}grid}\PYG{p}{,} \PYG{n}{cv}\PYG{o}{=}\PYG{l+m+mi}{5}\PYG{p}{,} \PYG{n}{scoring}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}accuracy\PYGZsq{}}\PYG{p}{,}
+                              \PYG{n}{verbose}\PYG{o}{=}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{n}{error\PYGZus{}score}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}raise\PYGZsq{}}\PYG{p}{)}
+  \PYG{n}{grid\PYGZus{}search}\PYG{o}{.}\PYG{n}{fit}\PYG{p}{(}\PYG{n}{X\PYGZus{}train}\PYG{p}{,} \PYG{n}{y\PYGZus{}train}\PYG{p}{)}
+
+  \PYG{n}{best\PYGZus{}params} \PYG{o}{=} \PYG{n}{grid\PYGZus{}search}\PYG{o}{.}\PYG{n}{best\PYGZus{}params\PYGZus{}}
+  \PYG{n}{best\PYGZus{}score} \PYG{o}{=} \PYG{n}{grid\PYGZus{}search}\PYG{o}{.}\PYG{n}{best\PYGZus{}score\PYGZus{}}
+  \PYG{n}{best\PYGZus{}pipeline} \PYG{o}{=} \PYG{n}{grid\PYGZus{}search}\PYG{o}{.}\PYG{n}{best\PYGZus{}estimator\PYGZus{}}
+  \PYG{n}{best\PYGZus{}model} \PYG{o}{=} \PYG{n}{best\PYGZus{}pipeline}\PYG{o}{.}\PYG{n}{named\PYGZus{}steps}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}classifier\PYGZsq{}}\PYG{p}{]}
+
+  \PYG{n}{y\PYGZus{}train\PYGZus{}pred} \PYG{o}{=} \PYG{n}{best\PYGZus{}pipeline}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{X\PYGZus{}train}\PYG{p}{)}
+  \PYG{n}{y\PYGZus{}test\PYGZus{}pred} \PYG{o}{=} \PYG{n}{best\PYGZus{}pipeline}\PYG{o}{.}\PYG{n}{predict}\PYG{p}{(}\PYG{n}{X\PYGZus{}test}\PYG{p}{)}
+
+\end{Verbatim}
