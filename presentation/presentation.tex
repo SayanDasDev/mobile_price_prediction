@@ -10,7 +10,7 @@
 \usepackage{amsmath, amsfonts, amssymb, enumerate, tfrupee, xcolor, lipsum, minted, algorithm, algpseudocode, algorithmicx, float, hyperref, booktabs, graphicx, array, multicol, changepage}
 
 \title{A Classification Based approach for predicting Smartphone Price Categories}
-\author{\textbf{Sayan Das} - B2430035 \and \textbf{Raihan Uddin} - B2430070}
+\author{Team: \textbf{Insight Engineers} \\  \textbf{Sayan Das} - B2430035 \and \textbf{Raihan Uddin} - B2430070 \\ Supervisor: \textbf{Br. Bhaswarachaitanya} (Tamal Maharaj)}
 \date{\today}
 
 \begin{document}
@@ -45,15 +45,43 @@
     \item<2-> Increase pricing transparency for \textbf{consumers}
   \end{itemize}
 \end{frame}
+
+\section{Objectives and Scope}
+\begin{frame}{}
+  \Huge
+  \centering
+  \textbf{Objectives and Scope}
+  \normalsize
+\end{frame}
 \begin{frame}{Objectives}
   \begin{itemize}
 	\setlength\itemsep{0.75em}
-    \item<1-> Develop a Robust Classification Model
+    \item<1-> Develop a Robust Classification Model to predict smartphone price categories
     \item<2-> Determine the most influential factors behind smartphone pricing
-    \item<3-> Compare algorithm performances
-    \item<4-> Practical Applicability
-    \item<5-> Methodological Contribution
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Scope}
+  \begin{block}{What This Project Does Cover}
+  \begin{itemize}
+	\setlength\itemsep{0.75em}
+    \item<1-> We will train multiple classification models to \textbf{predict the price range} of smartphones.
+    \item<2-> We will analyze the \textbf{feature importance} to determine the most influential factors behind smartphone pricing. 
+    \item<3-> We will \textbf{compare the performance} of various machine learning algorithms.
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Scope}
+  \begin{block}{What This Project Does Not Cover}
+    \begin{itemize}
+      \item<1-> Does not predict \textbf{the exact price of smartphones}, only the price category.
+      \item<2-> Does not include \textbf{real-time} data updates or predictions.
+      \item<3-> Does not cover hardware or software \textbf{implementation details} of the smartphone features.
+      \item<4-> Does not account for \textbf{market trends} or \textbf{external factors} influencing smartphone prices.
+      \item<4-> Does not concern with \textbf{development} details.
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 
@@ -480,12 +508,42 @@ selected_features = X.columns[p_values < 0.1]
   \end{block}
 \end{frame}
 
-\section{Models Development and Analysis}
+\section{Methodology and Analysis}
 \begin{frame}{}
   \Huge
   \centering
-  \textbf{Models Development and Analysis}
+  \textbf{Methodology and Analysis}
   \normalsize
+\end{frame}
+\begin{frame}{Tools and Libraries}
+  \begin{multicols}{2}
+  \begin{enumerate}
+    \setlength\itemsep{.25em}
+    \item Python
+    \item Jupyter Notebook
+    \scriptsize
+      \item Data Handling Libraries:
+          \begin{enumerate}
+              \item Pandas
+              \item Numpy
+          \end{enumerate}
+      \item{\textbf{Visualization Libraries: }}
+          \begin{enumerate}
+              \item Matplotlib
+              \item Seaborn
+          \end{enumerate}
+      \item{\textbf{Machine Learning Libraries: }}
+          \begin{enumerate}
+              \item Scikit-learn
+              \item XGBoost
+          \end{enumerate}
+      \item{\textbf{Other Libraries: }}
+          \begin{enumerate}
+              \item TQDM
+              \item Time
+          \end{enumerate}
+  \end{enumerate}
+\end{multicols}
 \end{frame}
 \begin{frame}{Models Development}
   We trained 6 models based on following algorithms:
@@ -855,6 +913,35 @@ for model_name, model in models.items():
 
 \end{frame}
 
+\section{Challenges and Learnings}
+
+\begin{frame}{}
+  \Huge
+  \centering
+  \textbf{Challenges and Learnings}
+  \normalsize
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Challanges and Learnings}
+  \begin{block}{Challenges}
+  \begin{itemize}
+    \setlength\itemsep{1em}
+    \item \textbf{Feature Engineering:} Feature engineering was challenging as we had to combine features to create new ones. This required understanding of both the dataset and domain knowledge.
+    \item \textbf{Hyperparameter Tuning:} Tuning hyperparameters for each model was time-consuming and required a lot of time as well as computational resources.
+  \end{itemize}
+  \end{block}
+  \footnotesize
+  \begin{block}{Learnings}
+    \begin{itemize}
+      \item \textbf{Data Preprocessing:} The importance of thorough data cleaning, normalization, and scaling to improve model performance.
+      \item \textbf{Model Evaluation:} The value of using multiple evaluation metrics (accuracy, precision, recall, F1-score) to get a comprehensive understanding of model performance.
+      \item \textbf{Feature Engineering:} How creating new features and selecting the most relevant ones can significantly impact model accuracy.
+      \item \textbf{Hyperparameter Tuning:} The impact of hyperparameter tuning on model performance and the importance of using techniques like GridSearchCV.
+      \item \textbf{Model Comparison:} The benefits of comparing multiple machine learning algorithms to identify the best-performing model for a given task.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
 \section{Conclusion}
 \begin{frame}{}
   \Huge
@@ -879,14 +966,11 @@ for model_name, model in models.items():
   \end{figure}
 \end{frame}
   
-\begin{frame}{Most Important Features}
+\begin{frame}{Future Work}
   \begin{itemize}
     \setlength\itemsep{1em}
-    \item<1->\textbf{Most Important:} RAM
-    \item<2-> Pixel Area
-    \item<3-> Battery Power
-    \item<4-> Weight
-    \item<5-> Internal Memory
+    \item \textbf{Recommendation System:} This model can be improved upon to develop a recommendation system that takes inputs about features like RAM, megapixels, screen size, etc., and provides a possible price (budget) and even suggests smartphone models based on real-time data.
+    \item \textbf{Deployment:} Deploying the model as a web application or API to provide real-time predictions and insights for users and businesses.
   \end{itemize}
 \end{frame}
 
@@ -909,21 +993,21 @@ for model_name, model in models.items():
   \end{thebibliography}
 \end{frame}
 
-\section{Acknowledgement}
-\begin{frame}{}
-  \Huge
-  \centering
-  \textbf{Acknowledgement}
-  \normalsize
-\end{frame}
-\begin{frame}{Acknowledgement}
-  \footnotesize
-  We would like to express our sincere gratitude to our supervisor, \textbf{Br. Bhaswarachaitanya} (Tamal Maharaj), Assistant Professor in the Department of Computer Science at \textit{Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI)}, for his invaluable guidance, encouragement, and support throughout the course of this project. His expertise in machine learning and his insightful suggestions were instrumental in shaping this project.
+% \section{Acknowledgement}
+% \begin{frame}{}
+%   \Huge
+%   \centering
+%   \textbf{Acknowledgement}
+%   \normalsize
+% \end{frame}
+% \begin{frame}{Acknowledgement}
+%   \footnotesize
+%   We would like to express our sincere gratitude to our supervisor, \textbf{Br. Bhaswarachaitanya} (Tamal Maharaj), Assistant Professor in the Department of Computer Science at \textit{Ramakrishna Mission Vivekananda Educational and Research Institute (RKMVERI)}, for his invaluable guidance, encouragement, and support throughout the course of this project. His expertise in machine learning and his insightful suggestions were instrumental in shaping this project.  
 
-  We would also like to thank \textit{Ramakrishna Mission Vivekananda Educational and Research Institute} for providing the necessary resources and facilities that enabled the successful completion of this project.
+%   We would also like to thank \textit{Ramakrishna Mission Vivekananda Educational and Research Institute} for providing the necessary resources and facilities that enabled the successful completion of this project.
 
-  Lastly, we extend our heartfelt thanks to our batch mates for their constant encouragement and understanding during the challenging phases of this project.
-\end{frame}
+%   Lastly, we extend our heartfelt thanks to our batch mates for their constant encouragement and understanding during the challenging phases of this project.
+% \end{frame}
 
 \begin{frame}{}
   \Huge

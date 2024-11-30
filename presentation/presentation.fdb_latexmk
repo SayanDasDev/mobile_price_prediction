@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1732540268.20878 "d:/Projects/smartphone_price_prediction/presentation/presentation.tex" "presentation.pdf" "presentation" 1732540273.87893 0
+["pdflatex"] 1732933526.69114 "d:/Projects/smartphone_price_prediction/presentation/presentation.tex" "presentation.pdf" "presentation" 1732933532.0494 0
   "../report/box_plots_after.png" 1732257147 141388 d47aacf04b6b1a81847844c6b3c191b3 ""
   "../report/box_plots_before.png" 1732257131 143447 d4687cab9f9863a28d9670e5204c0c0d ""
   "../report/cmat_DT.png" 1732454019 19874 4698d47637c639eb57f134a4841b1601 ""
@@ -285,15 +285,15 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1722703356 5529061 543042243f35af3474d78b11ac263772 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1723947191 8239278 b6fbeebd3da9b86f5eb58642d26f673a ""
   "c:/texlive/2024/texmf.cnf" 1723947283 731 37c028c2aaf39498484ba23e95891b0b ""
-  "d:/Projects/smartphone_price_prediction/presentation/presentation.tex" 1732540267 30370 c7460e8a7831525ae44534d735307983 ""
+  "d:/Projects/smartphone_price_prediction/presentation/presentation.tex" 1732933520 34375 7314daca9423ba9f96c6815edf9c20aa ""
   "feature_importance.png" 1732539554 22272 13fddc11b8b3ae25283c6bf2e972dbb4 ""
   "kaggle.png" 1732478405 7280 e58cedd795397b6c650a7800721b138a ""
   "missing_val.png" 1732521807 67078 b4c72c7335833b2d32dfe6ab7027a8d0 ""
-  "presentation.aux" 1732540273 16186 13604db709d68b3f014a34428ac417b2 "pdflatex"
-  "presentation.nav" 1732540273 7466 67796527caedab17ecd1cb8c81cff95b "pdflatex"
-  "presentation.out" 1732540273 891 eea159054d75ad20dc1a9cd0fa9df4f8 "pdflatex"
-  "presentation.tex" 1732540267 30370 c7460e8a7831525ae44534d735307983 ""
-  "presentation.toc" 1732540273 373 b6a0b01d0849e4f976eca891af0ee906 "pdflatex"
+  "presentation.aux" 1732933531 16902 a3ee7209c977062725269da958d6ae01 "pdflatex"
+  "presentation.nav" 1732933531 8096 1c534d5603915bdac0cb785a2d0b6955 "pdflatex"
+  "presentation.out" 1732933531 1053 0af97df23f70fc83b54ec0fc771f8873 "pdflatex"
+  "presentation.tex" 1732933520 34375 7314daca9423ba9f96c6815edf9c20aa ""
+  "presentation.toc" 1732933531 431 8814e81962650573ad3977d85c3a7b39 "pdflatex"
   (generated)
   "presentation.aux"
   "presentation.log"
